@@ -1,0 +1,122 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.current.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category 'Introduction' in sidebar 'current'"
+  },
+  "sidebar.current.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'current'"
+  },
+  "sidebar.current.category.Core Concepts": {
+    "message": "Core Concepts",
+    "description": "The label for category 'Core Concepts' in sidebar 'current'"
+  },
+  "sidebar.current.category.Quickstarts": {
+    "message": "Quickstarts",
+    "description": "The label for category 'Quickstarts' in sidebar 'current'"
+  },
+  "sidebar.current.category.Core Types": {
+    "message": "Core Types",
+    "description": "The label for category 'Core Types' in sidebar 'current'"
+  },
+  "sidebar.current.category.Using Dagger": {
+    "message": "Using Dagger",
+    "description": "The label for category 'Using Dagger' in sidebar 'current'"
+  },
+  "sidebar.current.category.Features": {
+    "message": "Features",
+    "description": "The label for category 'Features' in sidebar 'current'"
+  },
+  "sidebar.current.category.Core Features": {
+    "message": "Core Features",
+    "description": "The label for category 'Core Features' in sidebar 'current'"
+  },
+  "sidebar.current.category.Composition & Reusability": {
+    "message": "Composition & Reusability",
+    "description": "The label for category 'Composition & Reusability' in sidebar 'current'"
+  },
+  "sidebar.current.category.Advanced Features": {
+    "message": "Advanced Features",
+    "description": "The label for category 'Advanced Features' in sidebar 'current'"
+  },
+  "sidebar.current.category.Building with Dagger": {
+    "message": "Building with Dagger",
+    "description": "The label for category 'Building with Dagger' in sidebar 'current'"
+  },
+  "sidebar.current.category.Module Development": {
+    "message": "Module Development",
+    "description": "The label for category 'Module Development' in sidebar 'current'"
+  },
+  "sidebar.current.category.SDK Integration": {
+    "message": "SDK Integration",
+    "description": "The label for category 'SDK Integration' in sidebar 'current'"
+  },
+  "sidebar.current.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category 'Reference' in sidebar 'current'"
+  },
+  "sidebar.current.category.CLI": {
+    "message": "CLI",
+    "description": "The label for category 'CLI' in sidebar 'current'"
+  },
+  "sidebar.current.category.API & SDKs": {
+    "message": "API & SDKs",
+    "description": "The label for category 'API & SDKs' in sidebar 'current'"
+  },
+  "sidebar.current.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category 'Configuration' in sidebar 'current'"
+  },
+  "sidebar.current.category.Deployment": {
+    "message": "Deployment",
+    "description": "The label for category 'Deployment' in sidebar 'current'"
+  },
+  "sidebar.current.category.Container Runtimes": {
+    "message": "Container Runtimes",
+    "description": "The label for category 'Container Runtimes' in sidebar 'current'"
+  },
+  "sidebar.current.category.CI/CD Integration": {
+    "message": "CI/CD Integration",
+    "description": "The label for category 'CI/CD Integration' in sidebar 'current'"
+  },
+  "sidebar.current.category.Best Practices": {
+    "message": "Best Practices",
+    "description": "The label for category 'Best Practices' in sidebar 'current'"
+  },
+  "sidebar.current.link.Module Configuration Schema": {
+    "message": "Module Configuration Schema",
+    "description": "The label for link 'Module Configuration Schema' in sidebar 'current', linking to 'https://docs.dagger.io/reference/dagger.schema.json'"
+  },
+  "sidebar.current.link.GraphQL API Reference": {
+    "message": "GraphQL API Reference",
+    "description": "The label for link 'GraphQL API Reference' in sidebar 'current', linking to 'https://docs.dagger.io/api/reference'"
+  },
+  "sidebar.current.link.Go SDK Reference": {
+    "message": "Go SDK Reference",
+    "description": "The label for link 'Go SDK Reference' in sidebar 'current', linking to 'https://pkg.go.dev/dagger.io/dagger'"
+  },
+  "sidebar.current.link.PHP SDK Reference": {
+    "message": "PHP SDK Reference",
+    "description": "The label for link 'PHP SDK Reference' in sidebar 'current', linking to 'https://docs.dagger.io/reference/php'"
+  },
+  "sidebar.current.link.Python SDK Reference": {
+    "message": "Python SDK Reference",
+    "description": "The label for link 'Python SDK Reference' in sidebar 'current', linking to 'https://dagger-io.readthedocs.org/'"
+  },
+  "sidebar.current.link.Engine Configuration Schema": {
+    "message": "Engine Configuration Schema",
+    "description": "The label for link 'Engine Configuration Schema' in sidebar 'current', linking to 'https://docs.dagger.io/reference/engine.schema.json'"
+  },
+  "sidebar.current.doc.Cookbook": {
+    "message": "Cookbook",
+    "description": "The label for the doc item 'Cookbook' in sidebar 'current', linking to the doc cookbook/index"
+  },
+  "sidebar.current.doc.TypeScript SDK Reference": {
+    "message": "TypeScript SDK Reference",
+    "description": "The label for the doc item 'TypeScript SDK Reference' in sidebar 'current', linking to the doc reference/typescript/modules"
+  }
+}

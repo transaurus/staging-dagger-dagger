@@ -1,0 +1,14 @@
+{
+  "name": "dep",
+  "engineVersion": "v0.20.3",
+  "sdk": {
+    "source": "go"
+  },
+  "dependencies": [
+    {
+      "name": "nested-dep",
+      "source": "nested-dep"
+    }
+  ],
+  "disableDefaultFunctionCaching": true
+}

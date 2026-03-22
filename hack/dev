@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# hack/dev wraps hack/build to build and start a dev environment, allowing
+# running a specified command in that environment.
+
+set -e -u
+
+export HACK="$(cd $(dirname $(realpath "${BASH_SOURCE[0]}")) && pwd)"
+
+# HACK: dagger shell can't get docker context info, so we need to
+export DOCKER_HOST=${DOCKER_HOST:-$(docker context inspect -f '{{.Endpoints.docker.Host}}')}
+
+$HACK/build
+$HACK/with-dev $@

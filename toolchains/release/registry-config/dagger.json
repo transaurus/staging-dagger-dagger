@@ -1,0 +1,13 @@
+{
+  "name": "registry-config",
+  "engineVersion": "v0.20.3",
+  "sdk": {
+    "source": "go"
+  },
+  "include": [
+    "!../.direnv",
+    "!../.devenv",
+    "!../go.work",
+    "!../go.work.sum"
+  ]
+}

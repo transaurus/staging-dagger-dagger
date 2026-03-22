@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-reference/typescript/api/client.gen/classes/ModuleSource" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">TypeScript SDK Reference | Dagger</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.dagger.io/reference/typescript/api/client.gen/classes/ModuleSource"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="image" property="og:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="author" content="Dagger"><meta data-rh="true" property="twitter:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TypeScript SDK Reference | Dagger"><meta data-rh="true" name="description" content="The source needed to load and run a module, along with any metadata about the source such as versions/urls/etc."><meta data-rh="true" property="og:description" content="The source needed to load and run a module, along with any metadata about the source such as versions/urls/etc."><link data-rh="true" rel="icon" href="/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/ModuleSource"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/ModuleSource" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/ModuleSource" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XEIYPBWGOI-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Dagger" href="/opensearch.xml">
+
+
+
+
+<link rel="preconnect" href="https://us.i.posthog.com">
+<script>!function(t,e){var o,r,s,a;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,n,p){function c(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(s=t.createElement("script")).type="text/javascript",s.async=!0,s.src=n.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(a=t.getElementsByTagName("script")[0]).parentNode.insertBefore(s,a);var g=e;for(void 0!==p?g=e[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(t){var e="posthog";return"posthog"!==p&&(e+="."+p),t||(e+=" (stub)"),e},g.people.toString=function(){return g.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),r=0;r<o.length;r++)c(g,o[r]);e._i.push([i,n,p])},e.__SV=1)}(document,window.posthog||[]),posthog.init("phc_rykA1oJnBnxTwavpgJKr4RAVXEgCkpyPVi21vQ7906d",{api_host:"https://us.i.posthog.com",id:"default"})</script>
+
+
+<script src="/js/commonroom.js" async></script><link rel="stylesheet" href="/assets/css/styles.4801b2b3.css">
+<script src="/assets/js/runtime~main.4ffffea4.js" defer="defer"></script>
+<script src="/assets/js/main.cfaa2d89.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/dagger-logo-black.png"><link rel="preload" as="image" href="/img/dagger-logo-white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#131126;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">We've launched a brand-new docs site! 🎉 Still want the previous one? You can <a href="https://archive.docs.dagger.io/0.18/">find it in our archive</a>.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a href="https://dagger.io/" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/img/dagger-logo-black.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40px"><img src="/img/dagger-logo-white.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40px"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://dagger.io/cloud" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-blog-link dagger-cloud-button" id="dagger-cloud-link">Try Dagger Cloud</a><div class="header-searchbar navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR" style="color:var(--ifm-color-primary-light)"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/use-cases"><span title="Use Cases" class="linkLabel_WmDU">Use Cases</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/faq"><span title="FAQ" class="linkLabel_WmDU">FAQ</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/getting-started"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/core-concepts"><span title="Core Concepts" class="categoryLinkLabel_W154">Core Concepts</span></a><button aria-label="Collapse sidebar category &#x27;Core Concepts&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/core-concepts/toolchains"><span title="Toolchains" class="linkLabel_WmDU">Toolchains</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/core-concepts/checks"><span title="Checks" class="linkLabel_WmDU">Checks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/core-concepts/functions"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/getting-started/quickstarts/basics"><span title="Quickstarts" class="categoryLinkLabel_W154">Quickstarts</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/getting-started/types"><span title="Core Types" class="categoryLinkLabel_W154">Core Types</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/getting-started/concepts"><span title="Using Dagger" class="categoryLinkLabel_W154">Using Dagger</span></a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/features"><span title="Features" class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/extending"><span title="Building with Dagger" class="categoryLinkLabel_W154">Building with Dagger</span></a><button aria-label="Expand sidebar category &#x27;Building with Dagger&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cookbook"><span title="Cookbook" class="linkLabel_WmDU">Cookbook</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/reference/"><span title="Reference" class="categoryLinkLabel_W154">Reference</span></a><button aria-label="Expand sidebar category &#x27;Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Class: ModuleSource</h1></header>
+<p>The source needed to load and run a module, along with any metadata about the source such as versions/urls/etc.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extends">Extends<a href="#extends" class="hash-link" aria-label="Direct link to Extends" title="Direct link to Extends" translate="no">​</a></h2>
+<ul>
+<li class=""><code>BaseClient</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructors">Constructors<a href="#constructors" class="hash-link" aria-label="Direct link to Constructors" title="Direct link to Constructors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructor">Constructor<a href="#constructor" class="hash-link" aria-label="Direct link to Constructor" title="Direct link to Constructor" translate="no">​</a></h3>
+<blockquote>
+<p><strong>new ModuleSource</strong>(<code>ctx?</code>, <code>_id?</code>, <code>_asString?</code>, <code>_cloneRef?</code>, <code>_commit?</code>, <code>_configExists?</code>, <code>_digest?</code>, <code>_engineVersion?</code>, <code>_htmlRepoURL?</code>, <code>_htmlURL?</code>, <code>_kind?</code>, <code>_localContextDirectoryPath?</code>, <code>_moduleName?</code>, <code>_moduleOriginalName?</code>, <code>_originalSubpath?</code>, <code>_pin?</code>, <code>_repoRootPath?</code>, <code>_sourceRootSubpath?</code>, <code>_sourceSubpath?</code>, <code>_sync?</code>, <code>_version?</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Constructor is used for internal usage only, do not create object from it.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="ctx">ctx?<a href="#ctx" class="hash-link" aria-label="Direct link to ctx?" title="Direct link to ctx?" translate="no">​</a></h5>
+<p><code>Context</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_id">_id?<a href="#_id" class="hash-link" aria-label="Direct link to _id?" title="Direct link to _id?" translate="no">​</a></h5>
+<p><a class="" href="/reference/typescript/api/client.gen/type-aliases/ModuleSourceID"><code>ModuleSourceID</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_asstring">_asString?<a href="#_asstring" class="hash-link" aria-label="Direct link to _asString?" title="Direct link to _asString?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_cloneref">_cloneRef?<a href="#_cloneref" class="hash-link" aria-label="Direct link to _cloneRef?" title="Direct link to _cloneRef?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_commit">_commit?<a href="#_commit" class="hash-link" aria-label="Direct link to _commit?" title="Direct link to _commit?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_configexists">_configExists?<a href="#_configexists" class="hash-link" aria-label="Direct link to _configExists?" title="Direct link to _configExists?" translate="no">​</a></h5>
+<p><code>boolean</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_digest">_digest?<a href="#_digest" class="hash-link" aria-label="Direct link to _digest?" title="Direct link to _digest?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_engineversion">_engineVersion?<a href="#_engineversion" class="hash-link" aria-label="Direct link to _engineVersion?" title="Direct link to _engineVersion?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_htmlrepourl">_htmlRepoURL?<a href="#_htmlrepourl" class="hash-link" aria-label="Direct link to _htmlRepoURL?" title="Direct link to _htmlRepoURL?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_htmlurl">_htmlURL?<a href="#_htmlurl" class="hash-link" aria-label="Direct link to _htmlURL?" title="Direct link to _htmlURL?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_kind">_kind?<a href="#_kind" class="hash-link" aria-label="Direct link to _kind?" title="Direct link to _kind?" translate="no">​</a></h5>
+<p><a class="" href="/reference/typescript/api/client.gen/enumerations/ModuleSourceKind"><code>ModuleSourceKind</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_localcontextdirectorypath">_localContextDirectoryPath?<a href="#_localcontextdirectorypath" class="hash-link" aria-label="Direct link to _localContextDirectoryPath?" title="Direct link to _localContextDirectoryPath?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_modulename">_moduleName?<a href="#_modulename" class="hash-link" aria-label="Direct link to _moduleName?" title="Direct link to _moduleName?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_moduleoriginalname">_moduleOriginalName?<a href="#_moduleoriginalname" class="hash-link" aria-label="Direct link to _moduleOriginalName?" title="Direct link to _moduleOriginalName?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_originalsubpath">_originalSubpath?<a href="#_originalsubpath" class="hash-link" aria-label="Direct link to _originalSubpath?" title="Direct link to _originalSubpath?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_pin">_pin?<a href="#_pin" class="hash-link" aria-label="Direct link to _pin?" title="Direct link to _pin?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_reporootpath">_repoRootPath?<a href="#_reporootpath" class="hash-link" aria-label="Direct link to _repoRootPath?" title="Direct link to _repoRootPath?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_sourcerootsubpath">_sourceRootSubpath?<a href="#_sourcerootsubpath" class="hash-link" aria-label="Direct link to _sourceRootSubpath?" title="Direct link to _sourceRootSubpath?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_sourcesubpath">_sourceSubpath?<a href="#_sourcesubpath" class="hash-link" aria-label="Direct link to _sourceSubpath?" title="Direct link to _sourceSubpath?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_sync">_sync?<a href="#_sync" class="hash-link" aria-label="Direct link to _sync?" title="Direct link to _sync?" translate="no">​</a></h5>
+<p><a class="" href="/reference/typescript/api/client.gen/type-aliases/ModuleSourceID"><code>ModuleSourceID</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_version">_version?<a href="#_version" class="hash-link" aria-label="Direct link to _version?" title="Direct link to _version?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns">Returns<a href="#returns" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="overrides">Overrides<a href="#overrides" class="hash-link" aria-label="Direct link to Overrides" title="Direct link to Overrides" translate="no">​</a></h4>
+<p><code>BaseClient.constructor</code></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="asmodule">asModule()<a href="#asmodule" class="hash-link" aria-label="Direct link to asModule()" title="Direct link to asModule()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>asModule</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+</blockquote>
+<p>Load the source as a module. If this is a local source, the parent directory must have been provided during module source creation</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="asstring">asString()<a href="#asstring" class="hash-link" aria-label="Direct link to asString()" title="Direct link to asString()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>asString</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>A human readable ref string representation of this module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="blueprint">blueprint()<a href="#blueprint" class="hash-link" aria-label="Direct link to blueprint()" title="Direct link to blueprint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>blueprint</strong>(): <code>ModuleSource</code></p>
+</blockquote>
+<p>The blueprint referenced by the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloneref">cloneRef()<a href="#cloneref" class="hash-link" aria-label="Direct link to cloneRef()" title="Direct link to cloneRef()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>cloneRef</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The ref to clone the root of the git repo from. Only valid for git sources.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="commit">commit()<a href="#commit" class="hash-link" aria-label="Direct link to commit()" title="Direct link to commit()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>commit</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The resolved commit of the git repo this source points to.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configclients">configClients()<a href="#configclients" class="hash-link" aria-label="Direct link to configClients()" title="Direct link to configClients()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>configClients</strong>(): <code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/classes/ModuleConfigClient"><code>ModuleConfigClient</code></a>[]&gt;</p>
+</blockquote>
+<p>The clients generated for the module.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/classes/ModuleConfigClient"><code>ModuleConfigClient</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configexists">configExists()<a href="#configexists" class="hash-link" aria-label="Direct link to configExists()" title="Direct link to configExists()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>configExists</strong>(): <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Whether an existing dagger.json for the module was found.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextdirectory">contextDirectory()<a href="#contextdirectory" class="hash-link" aria-label="Direct link to contextDirectory()" title="Direct link to contextDirectory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>contextDirectory</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>The full directory loaded for the module source, including the source code as a subdirectory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependencies">dependencies()<a href="#dependencies" class="hash-link" aria-label="Direct link to dependencies()" title="Direct link to dependencies()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>dependencies</strong>(): <code>Promise</code>&lt;<code>ModuleSource</code>[]&gt;</p>
+</blockquote>
+<p>The dependencies of the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>ModuleSource</code>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="digest">digest()<a href="#digest" class="hash-link" aria-label="Direct link to digest()" title="Direct link to digest()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>digest</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>A content-hash of the module source. Module sources with the same digest will output the same generated context and convert into the same module instance.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="directory">directory()<a href="#directory" class="hash-link" aria-label="Direct link to directory()" title="Direct link to directory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>directory</strong>(<code>path</code>): <a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>The directory containing the module configuration and source code (source code may be in a subdir).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path">path<a href="#path" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A subpath from the source directory to select.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="engineversion">engineVersion()<a href="#engineversion" class="hash-link" aria-label="Direct link to engineVersion()" title="Direct link to engineVersion()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>engineVersion</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The engine version of the module.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="generatedcontextchangeset">generatedContextChangeset()<a href="#generatedcontextchangeset" class="hash-link" aria-label="Direct link to generatedContextChangeset()" title="Direct link to generatedContextChangeset()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>generatedContextChangeset</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+</blockquote>
+<p>The generated files and directories made on top of the module source&#x27;s context directory, returned as a Changeset.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="generatedcontextdirectory">generatedContextDirectory()<a href="#generatedcontextdirectory" class="hash-link" aria-label="Direct link to generatedContextDirectory()" title="Direct link to generatedContextDirectory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>generatedContextDirectory</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>The generated files and directories made on top of the module source&#x27;s context directory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="htmlrepourl">htmlRepoURL()<a href="#htmlrepourl" class="hash-link" aria-label="Direct link to htmlRepoURL()" title="Direct link to htmlRepoURL()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>htmlRepoURL</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The URL to access the web view of the repository (e.g., GitHub, GitLab, Bitbucket).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-15">Returns<a href="#returns-15" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="htmlurl">htmlURL()<a href="#htmlurl" class="hash-link" aria-label="Direct link to htmlURL()" title="Direct link to htmlURL()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>htmlURL</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The URL to the source&#x27;s git repo in a web browser. Only valid for git sources.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-16">Returns<a href="#returns-16" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id()<a href="#id" class="hash-link" aria-label="Direct link to id()" title="Direct link to id()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>id</strong>(): <code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/type-aliases/ModuleSourceID"><code>ModuleSourceID</code></a>&gt;</p>
+</blockquote>
+<p>A unique identifier for this ModuleSource.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-17">Returns<a href="#returns-17" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/type-aliases/ModuleSourceID"><code>ModuleSourceID</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="introspectionschemajson">introspectionSchemaJSON()<a href="#introspectionschemajson" class="hash-link" aria-label="Direct link to introspectionSchemaJSON()" title="Direct link to introspectionSchemaJSON()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>introspectionSchemaJSON</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>The introspection schema JSON file for this module source.</p>
+<p>This file represents the schema visible to the module&#x27;s source code, including all core types and those from the dependencies.</p>
+<p>Note: this is in the context of a module, so some core types may be hidden.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-18">Returns<a href="#returns-18" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="kind">kind()<a href="#kind" class="hash-link" aria-label="Direct link to kind()" title="Direct link to kind()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>kind</strong>(): <code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/enumerations/ModuleSourceKind"><code>ModuleSourceKind</code></a>&gt;</p>
+</blockquote>
+<p>The kind of module source (currently local, git or dir).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-19">Returns<a href="#returns-19" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/reference/typescript/api/client.gen/enumerations/ModuleSourceKind"><code>ModuleSourceKind</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="localcontextdirectorypath">localContextDirectoryPath()<a href="#localcontextdirectorypath" class="hash-link" aria-label="Direct link to localContextDirectoryPath()" title="Direct link to localContextDirectoryPath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>localContextDirectoryPath</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The full absolute path to the context directory on the caller&#x27;s host filesystem that this module source is loaded from. Only valid for local module sources.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-20">Returns<a href="#returns-20" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modulename">moduleName()<a href="#modulename" class="hash-link" aria-label="Direct link to moduleName()" title="Direct link to moduleName()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>moduleName</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The name of the module, including any setting via the withName API.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-21">Returns<a href="#returns-21" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="moduleoriginalname">moduleOriginalName()<a href="#moduleoriginalname" class="hash-link" aria-label="Direct link to moduleOriginalName()" title="Direct link to moduleOriginalName()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>moduleOriginalName</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The original name of the module as read from the module&#x27;s dagger.json (or set for the first time with the withName API).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="originalsubpath">originalSubpath()<a href="#originalsubpath" class="hash-link" aria-label="Direct link to originalSubpath()" title="Direct link to originalSubpath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>originalSubpath</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The original subpath used when instantiating this module source, relative to the context directory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-23">Returns<a href="#returns-23" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pin">pin()<a href="#pin" class="hash-link" aria-label="Direct link to pin()" title="Direct link to pin()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>pin</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The pinned version of this module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-24">Returns<a href="#returns-24" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reporootpath">repoRootPath()<a href="#reporootpath" class="hash-link" aria-label="Direct link to repoRootPath()" title="Direct link to repoRootPath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>repoRootPath</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The import path corresponding to the root of the git repo this source points to. Only valid for git sources.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sdk">sdk()<a href="#sdk" class="hash-link" aria-label="Direct link to sdk()" title="Direct link to sdk()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sdk</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/SDKConfig"><code>SDKConfig</code></a></p>
+</blockquote>
+<p>The SDK configuration of the module.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-26">Returns<a href="#returns-26" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/SDKConfig"><code>SDKConfig</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sourcerootsubpath">sourceRootSubpath()<a href="#sourcerootsubpath" class="hash-link" aria-label="Direct link to sourceRootSubpath()" title="Direct link to sourceRootSubpath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sourceRootSubpath</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The path, relative to the context directory, that contains the module&#x27;s dagger.json.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-27">Returns<a href="#returns-27" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sourcesubpath">sourceSubpath()<a href="#sourcesubpath" class="hash-link" aria-label="Direct link to sourceSubpath()" title="Direct link to sourceSubpath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sourceSubpath</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The path to the directory containing the module&#x27;s source code, relative to the context directory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-28">Returns<a href="#returns-28" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sync">sync()<a href="#sync" class="hash-link" aria-label="Direct link to sync()" title="Direct link to sync()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sync</strong>(): <code>Promise</code>&lt;<code>ModuleSource</code>&gt;</p>
+</blockquote>
+<p>Forces evaluation of the module source, including any loading into the engine and associated validation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-29">Returns<a href="#returns-29" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>ModuleSource</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="toolchains">toolchains()<a href="#toolchains" class="hash-link" aria-label="Direct link to toolchains()" title="Direct link to toolchains()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>toolchains</strong>(): <code>Promise</code>&lt;<code>ModuleSource</code>[]&gt;</p>
+</blockquote>
+<p>The toolchains referenced by the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-30">Returns<a href="#returns-30" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>ModuleSource</code>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="userdefaults">userDefaults()<a href="#userdefaults" class="hash-link" aria-label="Direct link to userDefaults()" title="Direct link to userDefaults()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>userDefaults</strong>(): <a class="" href="/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+</blockquote>
+<p>User-defined defaults read from local .env files</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-31">Returns<a href="#returns-31" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="version">version()<a href="#version" class="hash-link" aria-label="Direct link to version()" title="Direct link to version()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>version</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The specified version of the git repo this source points to.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-32">Returns<a href="#returns-32" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="with">with()<a href="#with" class="hash-link" aria-label="Direct link to with()" title="Direct link to with()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>with</strong>(<code>arg</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Call the provided function with current ModuleSource.</p>
+<p>This is useful for reusability and readability by not breaking the calling chain.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="arg">arg<a href="#arg" class="hash-link" aria-label="Direct link to arg" title="Direct link to arg" translate="no">​</a></h5>
+<p>(<code>param</code>) =&gt; <code>ModuleSource</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-33">Returns<a href="#returns-33" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withblueprint">withBlueprint()<a href="#withblueprint" class="hash-link" aria-label="Direct link to withBlueprint()" title="Direct link to withBlueprint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withBlueprint</strong>(<code>blueprint</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Set a blueprint for the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="blueprint-1">blueprint<a href="#blueprint-1" class="hash-link" aria-label="Direct link to blueprint" title="Direct link to blueprint" translate="no">​</a></h5>
+<p><code>ModuleSource</code></p>
+<p>The blueprint module to set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-34">Returns<a href="#returns-34" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withclient">withClient()<a href="#withclient" class="hash-link" aria-label="Direct link to withClient()" title="Direct link to withClient()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withClient</strong>(<code>generator</code>, <code>outputDir</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the module source with a new client to generate.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="generator">generator<a href="#generator" class="hash-link" aria-label="Direct link to generator" title="Direct link to generator" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The generator to use</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="outputdir">outputDir<a href="#outputdir" class="hash-link" aria-label="Direct link to outputDir" title="Direct link to outputDir" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The output directory for the generated client.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-35">Returns<a href="#returns-35" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdependencies">withDependencies()<a href="#withdependencies" class="hash-link" aria-label="Direct link to withDependencies()" title="Direct link to withDependencies()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDependencies</strong>(<code>dependencies</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Append the provided dependencies to the module source&#x27;s dependency list.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependencies-1">dependencies<a href="#dependencies-1" class="hash-link" aria-label="Direct link to dependencies" title="Direct link to dependencies" translate="no">​</a></h5>
+<p><code>ModuleSource</code>[]</p>
+<p>The dependencies to append.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-36">Returns<a href="#returns-36" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withengineversion">withEngineVersion()<a href="#withengineversion" class="hash-link" aria-label="Direct link to withEngineVersion()" title="Direct link to withEngineVersion()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEngineVersion</strong>(<code>version</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Upgrade the engine version of the module to the given value.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="version-1">version<a href="#version-1" class="hash-link" aria-label="Direct link to version" title="Direct link to version" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The engine version to upgrade to.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-37">Returns<a href="#returns-37" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withexperimentalfeatures">withExperimentalFeatures()<a href="#withexperimentalfeatures" class="hash-link" aria-label="Direct link to withExperimentalFeatures()" title="Direct link to withExperimentalFeatures()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withExperimentalFeatures</strong>(<code>features</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Enable the experimental features for the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">features<a href="#features" class="hash-link" aria-label="Direct link to features" title="Direct link to features" translate="no">​</a></h5>
+<p><a class="" href="/reference/typescript/api/client.gen/enumerations/ModuleSourceExperimentalFeature#selfcalls"><code>SelfCalls</code></a>[]</p>
+<p>The experimental features to enable.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-38">Returns<a href="#returns-38" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withincludes">withIncludes()<a href="#withincludes" class="hash-link" aria-label="Direct link to withIncludes()" title="Direct link to withIncludes()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withIncludes</strong>(<code>patterns</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the module source with additional include patterns for files+directories from its context that are required for building it</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="patterns">patterns<a href="#patterns" class="hash-link" aria-label="Direct link to patterns" title="Direct link to patterns" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The new additional include patterns.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-39">Returns<a href="#returns-39" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withname">withName()<a href="#withname" class="hash-link" aria-label="Direct link to withName()" title="Direct link to withName()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withName</strong>(<code>name</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the module source with a new name.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name">name<a href="#name" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name to set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-40">Returns<a href="#returns-40" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutblueprint">withoutBlueprint()<a href="#withoutblueprint" class="hash-link" aria-label="Direct link to withoutBlueprint()" title="Direct link to withoutBlueprint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutBlueprint</strong>(): <code>ModuleSource</code></p>
+</blockquote>
+<p>Remove the current blueprint from the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-41">Returns<a href="#returns-41" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutclient">withoutClient()<a href="#withoutclient" class="hash-link" aria-label="Direct link to withoutClient()" title="Direct link to withoutClient()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutClient</strong>(<code>path</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Remove a client from the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-1">path<a href="#path-1" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The path of the client to remove.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-42">Returns<a href="#returns-42" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutdependencies">withoutDependencies()<a href="#withoutdependencies" class="hash-link" aria-label="Direct link to withoutDependencies()" title="Direct link to withoutDependencies()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutDependencies</strong>(<code>dependencies</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Remove the provided dependencies from the module source&#x27;s dependency list.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-11">Parameters<a href="#parameters-11" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependencies-2">dependencies<a href="#dependencies-2" class="hash-link" aria-label="Direct link to dependencies" title="Direct link to dependencies" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The dependencies to remove.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-43">Returns<a href="#returns-43" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutexperimentalfeatures">withoutExperimentalFeatures()<a href="#withoutexperimentalfeatures" class="hash-link" aria-label="Direct link to withoutExperimentalFeatures()" title="Direct link to withoutExperimentalFeatures()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutExperimentalFeatures</strong>(<code>features</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Disable experimental features for the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-12">Parameters<a href="#parameters-12" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="features-1">features<a href="#features-1" class="hash-link" aria-label="Direct link to features" title="Direct link to features" translate="no">​</a></h5>
+<p><a class="" href="/reference/typescript/api/client.gen/enumerations/ModuleSourceExperimentalFeature#selfcalls"><code>SelfCalls</code></a>[]</p>
+<p>The experimental features to disable.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-44">Returns<a href="#returns-44" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withouttoolchains">withoutToolchains()<a href="#withouttoolchains" class="hash-link" aria-label="Direct link to withoutToolchains()" title="Direct link to withoutToolchains()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutToolchains</strong>(<code>toolchains</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Remove the provided toolchains from the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-13">Parameters<a href="#parameters-13" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="toolchains-1">toolchains<a href="#toolchains-1" class="hash-link" aria-label="Direct link to toolchains" title="Direct link to toolchains" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The toolchains to remove.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-45">Returns<a href="#returns-45" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsdk">withSDK()<a href="#withsdk" class="hash-link" aria-label="Direct link to withSDK()" title="Direct link to withSDK()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSDK</strong>(<code>source</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the module source with a new SDK.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-14">Parameters<a href="#parameters-14" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source">source<a href="#source" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The SDK source to set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-46">Returns<a href="#returns-46" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsourcesubpath">withSourceSubpath()<a href="#withsourcesubpath" class="hash-link" aria-label="Direct link to withSourceSubpath()" title="Direct link to withSourceSubpath()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSourceSubpath</strong>(<code>path</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the module source with a new source subpath.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-15">Parameters<a href="#parameters-15" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-2">path<a href="#path-2" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The path to set as the source subpath. Must be relative to the module source&#x27;s source root directory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-47">Returns<a href="#returns-47" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withtoolchains">withToolchains()<a href="#withtoolchains" class="hash-link" aria-label="Direct link to withToolchains()" title="Direct link to withToolchains()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withToolchains</strong>(<code>toolchains</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Add toolchains to the module source.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-16">Parameters<a href="#parameters-16" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="toolchains-2">toolchains<a href="#toolchains-2" class="hash-link" aria-label="Direct link to toolchains" title="Direct link to toolchains" translate="no">​</a></h5>
+<p><code>ModuleSource</code>[]</p>
+<p>The toolchain modules to add.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-48">Returns<a href="#returns-48" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withupdateblueprint">withUpdateBlueprint()<a href="#withupdateblueprint" class="hash-link" aria-label="Direct link to withUpdateBlueprint()" title="Direct link to withUpdateBlueprint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUpdateBlueprint</strong>(): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update the blueprint module to the latest version.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-49">Returns<a href="#returns-49" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withupdatedclients">withUpdatedClients()<a href="#withupdatedclients" class="hash-link" aria-label="Direct link to withUpdatedClients()" title="Direct link to withUpdatedClients()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUpdatedClients</strong>(<code>clients</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update one or more clients.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-17">Parameters<a href="#parameters-17" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="clients">clients<a href="#clients" class="hash-link" aria-label="Direct link to clients" title="Direct link to clients" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The clients to update</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-50">Returns<a href="#returns-50" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withupdatedependencies">withUpdateDependencies()<a href="#withupdatedependencies" class="hash-link" aria-label="Direct link to withUpdateDependencies()" title="Direct link to withUpdateDependencies()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUpdateDependencies</strong>(<code>dependencies</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update one or more module dependencies.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-18">Parameters<a href="#parameters-18" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependencies-3">dependencies<a href="#dependencies-3" class="hash-link" aria-label="Direct link to dependencies" title="Direct link to dependencies" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The dependencies to update.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-51">Returns<a href="#returns-51" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withupdatetoolchains">withUpdateToolchains()<a href="#withupdatetoolchains" class="hash-link" aria-label="Direct link to withUpdateToolchains()" title="Direct link to withUpdateToolchains()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUpdateToolchains</strong>(<code>toolchains</code>): <code>ModuleSource</code></p>
+</blockquote>
+<p>Update one or more toolchains.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="toolchains-3">toolchains<a href="#toolchains-3" class="hash-link" aria-label="Direct link to toolchains" title="Direct link to toolchains" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The toolchains to update.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>ModuleSource</code></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/dagger/dagger/edit/main/docs/current_docs/reference/typescript/api/client.gen/classes/ModuleSource.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#extends" class="table-of-contents__link toc-highlight">Extends</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#constructor" class="table-of-contents__link toc-highlight">Constructor</a></li></ul></li><li><a href="#methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#asmodule" class="table-of-contents__link toc-highlight">asModule()</a></li><li><a href="#asstring" class="table-of-contents__link toc-highlight">asString()</a></li><li><a href="#blueprint" class="table-of-contents__link toc-highlight">blueprint()</a></li><li><a href="#cloneref" class="table-of-contents__link toc-highlight">cloneRef()</a></li><li><a href="#commit" class="table-of-contents__link toc-highlight">commit()</a></li><li><a href="#configclients" class="table-of-contents__link toc-highlight">configClients()</a></li><li><a href="#configexists" class="table-of-contents__link toc-highlight">configExists()</a></li><li><a href="#contextdirectory" class="table-of-contents__link toc-highlight">contextDirectory()</a></li><li><a href="#dependencies" class="table-of-contents__link toc-highlight">dependencies()</a></li><li><a href="#digest" class="table-of-contents__link toc-highlight">digest()</a></li><li><a href="#directory" class="table-of-contents__link toc-highlight">directory()</a></li><li><a href="#engineversion" class="table-of-contents__link toc-highlight">engineVersion()</a></li><li><a href="#generatedcontextchangeset" class="table-of-contents__link toc-highlight">generatedContextChangeset()</a></li><li><a href="#generatedcontextdirectory" class="table-of-contents__link toc-highlight">generatedContextDirectory()</a></li><li><a href="#htmlrepourl" class="table-of-contents__link toc-highlight">htmlRepoURL()</a></li><li><a href="#htmlurl" class="table-of-contents__link toc-highlight">htmlURL()</a></li><li><a href="#id" class="table-of-contents__link toc-highlight">id()</a></li><li><a href="#introspectionschemajson" class="table-of-contents__link toc-highlight">introspectionSchemaJSON()</a></li><li><a href="#kind" class="table-of-contents__link toc-highlight">kind()</a></li><li><a href="#localcontextdirectorypath" class="table-of-contents__link toc-highlight">localContextDirectoryPath()</a></li><li><a href="#modulename" class="table-of-contents__link toc-highlight">moduleName()</a></li><li><a href="#moduleoriginalname" class="table-of-contents__link toc-highlight">moduleOriginalName()</a></li><li><a href="#originalsubpath" class="table-of-contents__link toc-highlight">originalSubpath()</a></li><li><a href="#pin" class="table-of-contents__link toc-highlight">pin()</a></li><li><a href="#reporootpath" class="table-of-contents__link toc-highlight">repoRootPath()</a></li><li><a href="#sdk" class="table-of-contents__link toc-highlight">sdk()</a></li><li><a href="#sourcerootsubpath" class="table-of-contents__link toc-highlight">sourceRootSubpath()</a></li><li><a href="#sourcesubpath" class="table-of-contents__link toc-highlight">sourceSubpath()</a></li><li><a href="#sync" class="table-of-contents__link toc-highlight">sync()</a></li><li><a href="#toolchains" class="table-of-contents__link toc-highlight">toolchains()</a></li><li><a href="#userdefaults" class="table-of-contents__link toc-highlight">userDefaults()</a></li><li><a href="#version" class="table-of-contents__link toc-highlight">version()</a></li><li><a href="#with" class="table-of-contents__link toc-highlight">with()</a></li><li><a href="#withblueprint" class="table-of-contents__link toc-highlight">withBlueprint()</a></li><li><a href="#withclient" class="table-of-contents__link toc-highlight">withClient()</a></li><li><a href="#withdependencies" class="table-of-contents__link toc-highlight">withDependencies()</a></li><li><a href="#withengineversion" class="table-of-contents__link toc-highlight">withEngineVersion()</a></li><li><a href="#withexperimentalfeatures" class="table-of-contents__link toc-highlight">withExperimentalFeatures()</a></li><li><a href="#withincludes" class="table-of-contents__link toc-highlight">withIncludes()</a></li><li><a href="#withname" class="table-of-contents__link toc-highlight">withName()</a></li><li><a href="#withoutblueprint" class="table-of-contents__link toc-highlight">withoutBlueprint()</a></li><li><a href="#withoutclient" class="table-of-contents__link toc-highlight">withoutClient()</a></li><li><a href="#withoutdependencies" class="table-of-contents__link toc-highlight">withoutDependencies()</a></li><li><a href="#withoutexperimentalfeatures" class="table-of-contents__link toc-highlight">withoutExperimentalFeatures()</a></li><li><a href="#withouttoolchains" class="table-of-contents__link toc-highlight">withoutToolchains()</a></li><li><a href="#withsdk" class="table-of-contents__link toc-highlight">withSDK()</a></li><li><a href="#withsourcesubpath" class="table-of-contents__link toc-highlight">withSourceSubpath()</a></li><li><a href="#withtoolchains" class="table-of-contents__link toc-highlight">withToolchains()</a></li><li><a href="#withupdateblueprint" class="table-of-contents__link toc-highlight">withUpdateBlueprint()</a></li><li><a href="#withupdatedclients" class="table-of-contents__link toc-highlight">withUpdatedClients()</a></li><li><a href="#withupdatedependencies" class="table-of-contents__link toc-highlight">withUpdateDependencies()</a></li><li><a href="#withupdatetoolchains" class="table-of-contents__link toc-highlight">withUpdateToolchains()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <hr>
+        <div class="flex justify-between">
+          <small>© Dagger 2022-2025</small>
+          <div class="flex gap-8">
+              <a target="_blank" class="footer-discord-link" href="https://discord.gg/dagger-io">
+              </a>
+              <a target="_blank" class="footer-x-link" href="https://twitter.com/dagger_io">
+              </a>
+          </div>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>
