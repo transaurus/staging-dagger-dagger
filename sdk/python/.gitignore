@@ -2,5 +2,4 @@
 .mypy_cache
 .pytest_cache
 .ruff_cache
-dist
 docs/_build
