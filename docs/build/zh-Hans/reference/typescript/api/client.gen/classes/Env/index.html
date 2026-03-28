@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-reference/typescript/api/client.gen/classes/Env" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">TypeScript SDK Reference | Dagger</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Env"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="image" property="og:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="author" content="Dagger"><meta data-rh="true" property="twitter:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TypeScript SDK Reference | Dagger"><meta data-rh="true" name="description" content="Extends"><meta data-rh="true" property="og:description" content="Extends"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Env"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Env" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Env" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Env" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XEIYPBWGOI-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Dagger" href="/zh-Hans/opensearch.xml">
+
+
+
+
+<link rel="preconnect" href="https://us.i.posthog.com">
+<script>!function(t,e){var o,r,s,a;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,n,p){function c(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(s=t.createElement("script")).type="text/javascript",s.async=!0,s.src=n.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(a=t.getElementsByTagName("script")[0]).parentNode.insertBefore(s,a);var g=e;for(void 0!==p?g=e[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(t){var e="posthog";return"posthog"!==p&&(e+="."+p),t||(e+=" (stub)"),e},g.people.toString=function(){return g.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),r=0;r<o.length;r++)c(g,o[r]);e._i.push([i,n,p])},e.__SV=1)}(document,window.posthog||[]),posthog.init("phc_rykA1oJnBnxTwavpgJKr4RAVXEgCkpyPVi21vQ7906d",{api_host:"https://us.i.posthog.com",id:"default"})</script>
+
+
+<script src="/js/commonroom.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.4801b2b3.css">
+<script src="/zh-Hans/assets/js/runtime~main.0768de0e.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.3687282e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-black.png"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#131126;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">We've launched a brand-new docs site! 🎉 Still want the previous one? You can <a href="https://archive.docs.dagger.io/0.18/">find it in our archive</a>.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a href="https://dagger.io/" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/zh-Hans/img/dagger-logo-black.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40px"><img src="/zh-Hans/img/dagger-logo-white.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40px"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://dagger.io/cloud" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-blog-link dagger-cloud-button" id="dagger-cloud-link">Try Dagger Cloud</a><div class="header-searchbar navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR" style="color:var(--ifm-color-primary-light)"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/use-cases"><span title="Use Cases" class="linkLabel_WmDU">Use Cases</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/faq"><span title="FAQ" class="linkLabel_WmDU">FAQ</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/core-concepts"><span title="Core Concepts" class="categoryLinkLabel_W154">Core Concepts</span></a><button aria-label="Collapse sidebar category &#x27;Core Concepts&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/toolchains"><span title="Toolchains" class="linkLabel_WmDU">Toolchains</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/checks"><span title="Checks" class="linkLabel_WmDU">Checks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/functions"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/quickstarts/basics"><span title="Quickstarts" class="categoryLinkLabel_W154">Quickstarts</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/types"><span title="Core Types" class="categoryLinkLabel_W154">Core Types</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/concepts"><span title="Using Dagger" class="categoryLinkLabel_W154">Using Dagger</span></a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/features"><span title="Features" class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/extending"><span title="Building with Dagger" class="categoryLinkLabel_W154">Building with Dagger</span></a><button aria-label="Expand sidebar category &#x27;Building with Dagger&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/cookbook"><span title="Cookbook" class="linkLabel_WmDU">Cookbook</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/reference/"><span title="Reference" class="categoryLinkLabel_W154">Reference</span></a><button aria-label="Expand sidebar category &#x27;Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Class: Env</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extends">Extends<a href="#extends" class="hash-link" aria-label="Direct link to Extends" title="Direct link to Extends" translate="no">​</a></h2>
+<ul>
+<li class=""><code>BaseClient</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructors">Constructors<a href="#constructors" class="hash-link" aria-label="Direct link to Constructors" title="Direct link to Constructors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructor">Constructor<a href="#constructor" class="hash-link" aria-label="Direct link to Constructor" title="Direct link to Constructor" translate="no">​</a></h3>
+<blockquote>
+<p><strong>new Env</strong>(<code>ctx?</code>, <code>_id?</code>): <code>Env</code></p>
+</blockquote>
+<p>Constructor is used for internal usage only, do not create object from it.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="ctx">ctx?<a href="#ctx" class="hash-link" aria-label="Direct link to ctx?" title="Direct link to ctx?" translate="no">​</a></h5>
+<p><code>Context</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_id">_id?<a href="#_id" class="hash-link" aria-label="Direct link to _id?" title="Direct link to _id?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvID"><code>EnvID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns">Returns<a href="#returns" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="overrides">Overrides<a href="#overrides" class="hash-link" aria-label="Direct link to Overrides" title="Direct link to Overrides" translate="no">​</a></h4>
+<p><code>BaseClient.constructor</code></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="check">check()<a href="#check" class="hash-link" aria-label="Direct link to check()" title="Direct link to check()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>check</strong>(<code>name</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Check"><code>Check</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Return the check with the given name from the installed modules. Must match exactly one check.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name">name<a href="#name" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the check to retrieve</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Check"><code>Check</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="checks">checks()<a href="#checks" class="hash-link" aria-label="Direct link to checks()" title="Direct link to checks()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>checks</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CheckGroup"><code>CheckGroup</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Return all checks defined by the installed modules</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts">opts?<a href="#opts" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvChecksOpts"><code>EnvChecksOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CheckGroup"><code>CheckGroup</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id()<a href="#id" class="hash-link" aria-label="Direct link to id()" title="Direct link to id()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>id</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvID"><code>EnvID</code></a>&gt;</p>
+</blockquote>
+<p>A unique identifier for this Env.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvID"><code>EnvID</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="input">input()<a href="#input" class="hash-link" aria-label="Direct link to input()" title="Direct link to input()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>input</strong>(<code>name</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+</blockquote>
+<p>Retrieves an input binding by name</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-1">name<a href="#name-1" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inputs">inputs()<a href="#inputs" class="hash-link" aria-label="Direct link to inputs()" title="Direct link to inputs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>inputs</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a>[]&gt;</p>
+</blockquote>
+<p>Returns all input bindings provided to the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="output">output()<a href="#output" class="hash-link" aria-label="Direct link to output()" title="Direct link to output()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>output</strong>(<code>name</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+</blockquote>
+<p>Retrieves an output binding by name</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-2">name<a href="#name-2" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="outputs">outputs()<a href="#outputs" class="hash-link" aria-label="Direct link to outputs()" title="Direct link to outputs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>outputs</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a>[]&gt;</p>
+</blockquote>
+<p>Returns all declared output bindings for the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="with">with()<a href="#with" class="hash-link" aria-label="Direct link to with()" title="Direct link to with()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>with</strong>(<code>arg</code>): <code>Env</code></p>
+</blockquote>
+<p>Call the provided function with current Env.</p>
+<p>This is useful for reusability and readability by not breaking the calling chain.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="arg">arg<a href="#arg" class="hash-link" aria-label="Direct link to arg" title="Direct link to arg" translate="no">​</a></h5>
+<p>(<code>param</code>) =&gt; <code>Env</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withaddressinput">withAddressInput()<a href="#withaddressinput" class="hash-link" aria-label="Direct link to withAddressInput()" title="Direct link to withAddressInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withAddressInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Address in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-3">name<a href="#name-3" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value">value<a href="#value" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Address"><code>Address</code></a></p>
+<p>The Address value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">description<a href="#description" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withaddressoutput">withAddressOutput()<a href="#withaddressoutput" class="hash-link" aria-label="Direct link to withAddressOutput()" title="Direct link to withAddressOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withAddressOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Address output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-4">name<a href="#name-4" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-1">description<a href="#description-1" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcachevolumeinput">withCacheVolumeInput()<a href="#withcachevolumeinput" class="hash-link" aria-label="Direct link to withCacheVolumeInput()" title="Direct link to withCacheVolumeInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCacheVolumeInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type CacheVolume in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-5">name<a href="#name-5" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-1">value<a href="#value-1" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+<p>The CacheVolume value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-2">description<a href="#description-2" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcachevolumeoutput">withCacheVolumeOutput()<a href="#withcachevolumeoutput" class="hash-link" aria-label="Direct link to withCacheVolumeOutput()" title="Direct link to withCacheVolumeOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCacheVolumeOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired CacheVolume output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-6">name<a href="#name-6" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-3">description<a href="#description-3" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withchangesetinput">withChangesetInput()<a href="#withchangesetinput" class="hash-link" aria-label="Direct link to withChangesetInput()" title="Direct link to withChangesetInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withChangesetInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Changeset in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-7">name<a href="#name-7" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-2">value<a href="#value-2" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+<p>The Changeset value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-4">description<a href="#description-4" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withchangesetoutput">withChangesetOutput()<a href="#withchangesetoutput" class="hash-link" aria-label="Direct link to withChangesetOutput()" title="Direct link to withChangesetOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withChangesetOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Changeset output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-11">Parameters<a href="#parameters-11" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-8">name<a href="#name-8" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-5">description<a href="#description-5" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcheckgroupinput">withCheckGroupInput()<a href="#withcheckgroupinput" class="hash-link" aria-label="Direct link to withCheckGroupInput()" title="Direct link to withCheckGroupInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCheckGroupInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type CheckGroup in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-12">Parameters<a href="#parameters-12" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-9">name<a href="#name-9" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-3">value<a href="#value-3" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CheckGroup"><code>CheckGroup</code></a></p>
+<p>The CheckGroup value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-6">description<a href="#description-6" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-15">Returns<a href="#returns-15" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcheckgroupoutput">withCheckGroupOutput()<a href="#withcheckgroupoutput" class="hash-link" aria-label="Direct link to withCheckGroupOutput()" title="Direct link to withCheckGroupOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCheckGroupOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired CheckGroup output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-13">Parameters<a href="#parameters-13" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-10">name<a href="#name-10" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-7">description<a href="#description-7" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-16">Returns<a href="#returns-16" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcheckinput">withCheckInput()<a href="#withcheckinput" class="hash-link" aria-label="Direct link to withCheckInput()" title="Direct link to withCheckInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCheckInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Check in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-14">Parameters<a href="#parameters-14" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-11">name<a href="#name-11" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-4">value<a href="#value-4" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Check"><code>Check</code></a></p>
+<p>The Check value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-8">description<a href="#description-8" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-17">Returns<a href="#returns-17" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcheckoutput">withCheckOutput()<a href="#withcheckoutput" class="hash-link" aria-label="Direct link to withCheckOutput()" title="Direct link to withCheckOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCheckOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Check output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-15">Parameters<a href="#parameters-15" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-12">name<a href="#name-12" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-9">description<a href="#description-9" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-18">Returns<a href="#returns-18" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcloudinput">withCloudInput()<a href="#withcloudinput" class="hash-link" aria-label="Direct link to withCloudInput()" title="Direct link to withCloudInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCloudInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Cloud in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-16">Parameters<a href="#parameters-16" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-13">name<a href="#name-13" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-5">value<a href="#value-5" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Cloud"><code>Cloud</code></a></p>
+<p>The Cloud value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-10">description<a href="#description-10" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-19">Returns<a href="#returns-19" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcloudoutput">withCloudOutput()<a href="#withcloudoutput" class="hash-link" aria-label="Direct link to withCloudOutput()" title="Direct link to withCloudOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCloudOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Cloud output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-17">Parameters<a href="#parameters-17" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-14">name<a href="#name-14" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-11">description<a href="#description-11" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-20">Returns<a href="#returns-20" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcontainerinput">withContainerInput()<a href="#withcontainerinput" class="hash-link" aria-label="Direct link to withContainerInput()" title="Direct link to withContainerInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withContainerInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Container in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-18">Parameters<a href="#parameters-18" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-15">name<a href="#name-15" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-6">value<a href="#value-6" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Container"><code>Container</code></a></p>
+<p>The Container value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-12">description<a href="#description-12" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-21">Returns<a href="#returns-21" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcontaineroutput">withContainerOutput()<a href="#withcontaineroutput" class="hash-link" aria-label="Direct link to withContainerOutput()" title="Direct link to withContainerOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withContainerOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Container output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-16">name<a href="#name-16" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-13">description<a href="#description-13" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withcurrentmodule">withCurrentModule()<a href="#withcurrentmodule" class="hash-link" aria-label="Direct link to withCurrentModule()" title="Direct link to withCurrentModule()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withCurrentModule</strong>(): <code>Env</code></p>
+</blockquote>
+<p>Installs the current module into the environment, exposing its functions to the model</p>
+<p>Contextual path arguments will be populated using the environment&#x27;s workspace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-23">Returns<a href="#returns-23" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdirectoryinput">withDirectoryInput()<a href="#withdirectoryinput" class="hash-link" aria-label="Direct link to withDirectoryInput()" title="Direct link to withDirectoryInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDirectoryInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Directory in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-20">Parameters<a href="#parameters-20" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-17">name<a href="#name-17" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-7">value<a href="#value-7" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<p>The Directory value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-14">description<a href="#description-14" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-24">Returns<a href="#returns-24" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdirectoryoutput">withDirectoryOutput()<a href="#withdirectoryoutput" class="hash-link" aria-label="Direct link to withDirectoryOutput()" title="Direct link to withDirectoryOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDirectoryOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Directory output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-21">Parameters<a href="#parameters-21" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-18">name<a href="#name-18" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-15">description<a href="#description-15" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvfileinput">withEnvFileInput()<a href="#withenvfileinput" class="hash-link" aria-label="Direct link to withEnvFileInput()" title="Direct link to withEnvFileInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvFileInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type EnvFile in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-22">Parameters<a href="#parameters-22" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-19">name<a href="#name-19" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-8">value<a href="#value-8" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+<p>The EnvFile value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-16">description<a href="#description-16" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-26">Returns<a href="#returns-26" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvfileoutput">withEnvFileOutput()<a href="#withenvfileoutput" class="hash-link" aria-label="Direct link to withEnvFileOutput()" title="Direct link to withEnvFileOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvFileOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired EnvFile output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-23">Parameters<a href="#parameters-23" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-20">name<a href="#name-20" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-17">description<a href="#description-17" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-27">Returns<a href="#returns-27" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvinput">withEnvInput()<a href="#withenvinput" class="hash-link" aria-label="Direct link to withEnvInput()" title="Direct link to withEnvInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Env in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-24">Parameters<a href="#parameters-24" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-21">name<a href="#name-21" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-9">value<a href="#value-9" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>Env</code></p>
+<p>The Env value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-18">description<a href="#description-18" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-28">Returns<a href="#returns-28" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvoutput">withEnvOutput()<a href="#withenvoutput" class="hash-link" aria-label="Direct link to withEnvOutput()" title="Direct link to withEnvOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Env output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-25">Parameters<a href="#parameters-25" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-22">name<a href="#name-22" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-19">description<a href="#description-19" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-29">Returns<a href="#returns-29" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withfileinput">withFileInput()<a href="#withfileinput" class="hash-link" aria-label="Direct link to withFileInput()" title="Direct link to withFileInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withFileInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type File in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-26">Parameters<a href="#parameters-26" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-23">name<a href="#name-23" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-10">value<a href="#value-10" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<p>The File value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-20">description<a href="#description-20" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-30">Returns<a href="#returns-30" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withfileoutput">withFileOutput()<a href="#withfileoutput" class="hash-link" aria-label="Direct link to withFileOutput()" title="Direct link to withFileOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withFileOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired File output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-27">Parameters<a href="#parameters-27" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-24">name<a href="#name-24" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-21">description<a href="#description-21" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-31">Returns<a href="#returns-31" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgeneratorgroupinput">withGeneratorGroupInput()<a href="#withgeneratorgroupinput" class="hash-link" aria-label="Direct link to withGeneratorGroupInput()" title="Direct link to withGeneratorGroupInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGeneratorGroupInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type GeneratorGroup in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-28">Parameters<a href="#parameters-28" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-25">name<a href="#name-25" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-11">value<a href="#value-11" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratorGroup"><code>GeneratorGroup</code></a></p>
+<p>The GeneratorGroup value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-22">description<a href="#description-22" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-32">Returns<a href="#returns-32" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgeneratorgroupoutput">withGeneratorGroupOutput()<a href="#withgeneratorgroupoutput" class="hash-link" aria-label="Direct link to withGeneratorGroupOutput()" title="Direct link to withGeneratorGroupOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGeneratorGroupOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired GeneratorGroup output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-29">Parameters<a href="#parameters-29" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-26">name<a href="#name-26" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-23">description<a href="#description-23" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-33">Returns<a href="#returns-33" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgeneratorinput">withGeneratorInput()<a href="#withgeneratorinput" class="hash-link" aria-label="Direct link to withGeneratorInput()" title="Direct link to withGeneratorInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGeneratorInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Generator in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-30">Parameters<a href="#parameters-30" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-27">name<a href="#name-27" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-12">value<a href="#value-12" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Generator"><code>Generator</code></a></p>
+<p>The Generator value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-24">description<a href="#description-24" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-34">Returns<a href="#returns-34" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgeneratoroutput">withGeneratorOutput()<a href="#withgeneratoroutput" class="hash-link" aria-label="Direct link to withGeneratorOutput()" title="Direct link to withGeneratorOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGeneratorOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Generator output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-31">Parameters<a href="#parameters-31" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-28">name<a href="#name-28" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-25">description<a href="#description-25" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-35">Returns<a href="#returns-35" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgitrefinput">withGitRefInput()<a href="#withgitrefinput" class="hash-link" aria-label="Direct link to withGitRefInput()" title="Direct link to withGitRefInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGitRefInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type GitRef in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-32">Parameters<a href="#parameters-32" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-29">name<a href="#name-29" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-13">value<a href="#value-13" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRef"><code>GitRef</code></a></p>
+<p>The GitRef value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-26">description<a href="#description-26" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-36">Returns<a href="#returns-36" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgitrefoutput">withGitRefOutput()<a href="#withgitrefoutput" class="hash-link" aria-label="Direct link to withGitRefOutput()" title="Direct link to withGitRefOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGitRefOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired GitRef output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-33">Parameters<a href="#parameters-33" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-30">name<a href="#name-30" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-27">description<a href="#description-27" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-37">Returns<a href="#returns-37" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgitrepositoryinput">withGitRepositoryInput()<a href="#withgitrepositoryinput" class="hash-link" aria-label="Direct link to withGitRepositoryInput()" title="Direct link to withGitRepositoryInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGitRepositoryInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type GitRepository in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-34">Parameters<a href="#parameters-34" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-31">name<a href="#name-31" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-14">value<a href="#value-14" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRepository"><code>GitRepository</code></a></p>
+<p>The GitRepository value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-28">description<a href="#description-28" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-38">Returns<a href="#returns-38" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withgitrepositoryoutput">withGitRepositoryOutput()<a href="#withgitrepositoryoutput" class="hash-link" aria-label="Direct link to withGitRepositoryOutput()" title="Direct link to withGitRepositoryOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withGitRepositoryOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired GitRepository output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-35">Parameters<a href="#parameters-35" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-32">name<a href="#name-32" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-29">description<a href="#description-29" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-39">Returns<a href="#returns-39" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withjsonvalueinput">withJSONValueInput()<a href="#withjsonvalueinput" class="hash-link" aria-label="Direct link to withJSONValueInput()" title="Direct link to withJSONValueInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withJSONValueInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type JSONValue in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-36">Parameters<a href="#parameters-36" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-33">name<a href="#name-33" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-15">value<a href="#value-15" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/JSONValue"><code>JSONValue</code></a></p>
+<p>The JSONValue value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-30">description<a href="#description-30" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-40">Returns<a href="#returns-40" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withjsonvalueoutput">withJSONValueOutput()<a href="#withjsonvalueoutput" class="hash-link" aria-label="Direct link to withJSONValueOutput()" title="Direct link to withJSONValueOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withJSONValueOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired JSONValue output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-37">Parameters<a href="#parameters-37" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-34">name<a href="#name-34" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-31">description<a href="#description-31" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-41">Returns<a href="#returns-41" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmainmodule">withMainModule()<a href="#withmainmodule" class="hash-link" aria-label="Direct link to withMainModule()" title="Direct link to withMainModule()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMainModule</strong>(<code>module_</code>): <code>Env</code></p>
+</blockquote>
+<p>Sets the main module for this environment (the project being worked on)</p>
+<p>Contextual path arguments will be populated using the environment&#x27;s workspace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-38">Parameters<a href="#parameters-38" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="module_">module_<a href="#module_" class="hash-link" aria-label="Direct link to module_" title="Direct link to module_" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-42">Returns<a href="#returns-42" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmodule"><del>withModule()</del><a href="#withmodule" class="hash-link" aria-label="Direct link to withmodule" title="Direct link to withmodule" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModule</strong>(<code>module_</code>): <code>Env</code></p>
+</blockquote>
+<p>Installs a module into the environment, exposing its functions to the model</p>
+<p>Contextual path arguments will be populated using the environment&#x27;s workspace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-39">Parameters<a href="#parameters-39" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="module_-1">module_<a href="#module_-1" class="hash-link" aria-label="Direct link to module_" title="Direct link to module_" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-43">Returns<a href="#returns-43" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="deprecated">Deprecated<a href="#deprecated" class="hash-link" aria-label="Direct link to Deprecated" title="Direct link to Deprecated" translate="no">​</a></h4>
+<p>Use withMainModule instead</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmoduleconfigclientinput">withModuleConfigClientInput()<a href="#withmoduleconfigclientinput" class="hash-link" aria-label="Direct link to withModuleConfigClientInput()" title="Direct link to withModuleConfigClientInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleConfigClientInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type ModuleConfigClient in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-40">Parameters<a href="#parameters-40" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-35">name<a href="#name-35" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-16">value<a href="#value-16" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleConfigClient"><code>ModuleConfigClient</code></a></p>
+<p>The ModuleConfigClient value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-32">description<a href="#description-32" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-44">Returns<a href="#returns-44" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmoduleconfigclientoutput">withModuleConfigClientOutput()<a href="#withmoduleconfigclientoutput" class="hash-link" aria-label="Direct link to withModuleConfigClientOutput()" title="Direct link to withModuleConfigClientOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleConfigClientOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired ModuleConfigClient output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-41">Parameters<a href="#parameters-41" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-36">name<a href="#name-36" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-33">description<a href="#description-33" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-45">Returns<a href="#returns-45" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmoduleinput">withModuleInput()<a href="#withmoduleinput" class="hash-link" aria-label="Direct link to withModuleInput()" title="Direct link to withModuleInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Module in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-42">Parameters<a href="#parameters-42" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-37">name<a href="#name-37" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-17">value<a href="#value-17" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<p>The Module value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-34">description<a href="#description-34" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-46">Returns<a href="#returns-46" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmoduleoutput">withModuleOutput()<a href="#withmoduleoutput" class="hash-link" aria-label="Direct link to withModuleOutput()" title="Direct link to withModuleOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Module output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-43">Parameters<a href="#parameters-43" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-38">name<a href="#name-38" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-35">description<a href="#description-35" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-47">Returns<a href="#returns-47" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmodulesourceinput">withModuleSourceInput()<a href="#withmodulesourceinput" class="hash-link" aria-label="Direct link to withModuleSourceInput()" title="Direct link to withModuleSourceInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleSourceInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type ModuleSource in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-44">Parameters<a href="#parameters-44" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-39">name<a href="#name-39" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-18">value<a href="#value-18" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleSource"><code>ModuleSource</code></a></p>
+<p>The ModuleSource value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-36">description<a href="#description-36" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-48">Returns<a href="#returns-48" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmodulesourceoutput">withModuleSourceOutput()<a href="#withmodulesourceoutput" class="hash-link" aria-label="Direct link to withModuleSourceOutput()" title="Direct link to withModuleSourceOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withModuleSourceOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired ModuleSource output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-45">Parameters<a href="#parameters-45" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-40">name<a href="#name-40" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-37">description<a href="#description-37" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-49">Returns<a href="#returns-49" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutoutputs">withoutOutputs()<a href="#withoutoutputs" class="hash-link" aria-label="Direct link to withoutOutputs()" title="Direct link to withoutOutputs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutOutputs</strong>(): <code>Env</code></p>
+</blockquote>
+<p>Returns a new environment without any outputs</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-50">Returns<a href="#returns-50" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsearchresultinput">withSearchResultInput()<a href="#withsearchresultinput" class="hash-link" aria-label="Direct link to withSearchResultInput()" title="Direct link to withSearchResultInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSearchResultInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type SearchResult in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-46">Parameters<a href="#parameters-46" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-41">name<a href="#name-41" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-19">value<a href="#value-19" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchResult"><code>SearchResult</code></a></p>
+<p>The SearchResult value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-38">description<a href="#description-38" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-51">Returns<a href="#returns-51" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsearchresultoutput">withSearchResultOutput()<a href="#withsearchresultoutput" class="hash-link" aria-label="Direct link to withSearchResultOutput()" title="Direct link to withSearchResultOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSearchResultOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired SearchResult output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-47">Parameters<a href="#parameters-47" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-42">name<a href="#name-42" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-39">description<a href="#description-39" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsearchsubmatchinput">withSearchSubmatchInput()<a href="#withsearchsubmatchinput" class="hash-link" aria-label="Direct link to withSearchSubmatchInput()" title="Direct link to withSearchSubmatchInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSearchSubmatchInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type SearchSubmatch in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-48">Parameters<a href="#parameters-48" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-43">name<a href="#name-43" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-20">value<a href="#value-20" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchSubmatch"><code>SearchSubmatch</code></a></p>
+<p>The SearchSubmatch value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-40">description<a href="#description-40" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-53">Returns<a href="#returns-53" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsearchsubmatchoutput">withSearchSubmatchOutput()<a href="#withsearchsubmatchoutput" class="hash-link" aria-label="Direct link to withSearchSubmatchOutput()" title="Direct link to withSearchSubmatchOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSearchSubmatchOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired SearchSubmatch output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-49">Parameters<a href="#parameters-49" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-44">name<a href="#name-44" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-41">description<a href="#description-41" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-54">Returns<a href="#returns-54" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsecretinput">withSecretInput()<a href="#withsecretinput" class="hash-link" aria-label="Direct link to withSecretInput()" title="Direct link to withSecretInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSecretInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Secret in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-50">Parameters<a href="#parameters-50" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-45">name<a href="#name-45" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-21">value<a href="#value-21" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<p>The Secret value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-42">description<a href="#description-42" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-55">Returns<a href="#returns-55" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsecretoutput">withSecretOutput()<a href="#withsecretoutput" class="hash-link" aria-label="Direct link to withSecretOutput()" title="Direct link to withSecretOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSecretOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Secret output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-51">Parameters<a href="#parameters-51" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-46">name<a href="#name-46" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-43">description<a href="#description-43" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-56">Returns<a href="#returns-56" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withserviceinput">withServiceInput()<a href="#withserviceinput" class="hash-link" aria-label="Direct link to withServiceInput()" title="Direct link to withServiceInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withServiceInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Service in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-52">Parameters<a href="#parameters-52" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-47">name<a href="#name-47" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-22">value<a href="#value-22" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+<p>The Service value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-44">description<a href="#description-44" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-57">Returns<a href="#returns-57" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withserviceoutput">withServiceOutput()<a href="#withserviceoutput" class="hash-link" aria-label="Direct link to withServiceOutput()" title="Direct link to withServiceOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withServiceOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Service output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-53">Parameters<a href="#parameters-53" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-48">name<a href="#name-48" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-45">description<a href="#description-45" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-58">Returns<a href="#returns-58" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsocketinput">withSocketInput()<a href="#withsocketinput" class="hash-link" aria-label="Direct link to withSocketInput()" title="Direct link to withSocketInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSocketInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Socket in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-54">Parameters<a href="#parameters-54" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-49">name<a href="#name-49" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-23">value<a href="#value-23" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Socket"><code>Socket</code></a></p>
+<p>The Socket value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-46">description<a href="#description-46" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-59">Returns<a href="#returns-59" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsocketoutput">withSocketOutput()<a href="#withsocketoutput" class="hash-link" aria-label="Direct link to withSocketOutput()" title="Direct link to withSocketOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSocketOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Socket output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-55">Parameters<a href="#parameters-55" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-50">name<a href="#name-50" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-47">description<a href="#description-47" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-60">Returns<a href="#returns-60" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withstatinput">withStatInput()<a href="#withstatinput" class="hash-link" aria-label="Direct link to withStatInput()" title="Direct link to withStatInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withStatInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Stat in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-56">Parameters<a href="#parameters-56" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-51">name<a href="#name-51" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-24">value<a href="#value-24" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Stat"><code>Stat</code></a></p>
+<p>The Stat value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-48">description<a href="#description-48" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-61">Returns<a href="#returns-61" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withstatoutput">withStatOutput()<a href="#withstatoutput" class="hash-link" aria-label="Direct link to withStatOutput()" title="Direct link to withStatOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withStatOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Stat output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-57">Parameters<a href="#parameters-57" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-52">name<a href="#name-52" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-49">description<a href="#description-49" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-62">Returns<a href="#returns-62" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withstringinput">withStringInput()<a href="#withstringinput" class="hash-link" aria-label="Direct link to withStringInput()" title="Direct link to withStringInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withStringInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Provides a string input binding to the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-58">Parameters<a href="#parameters-58" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-53">name<a href="#name-53" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-25">value<a href="#value-25" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The string value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-50">description<a href="#description-50" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The description of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-63">Returns<a href="#returns-63" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withstringoutput">withStringOutput()<a href="#withstringoutput" class="hash-link" aria-label="Direct link to withStringOutput()" title="Direct link to withStringOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withStringOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declares a desired string output binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-59">Parameters<a href="#parameters-59" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-54">name<a href="#name-54" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-51">description<a href="#description-51" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The description of the output</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-64">Returns<a href="#returns-64" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withworkspace">withWorkspace()<a href="#withworkspace" class="hash-link" aria-label="Direct link to withWorkspace()" title="Direct link to withWorkspace()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withWorkspace</strong>(<code>workspace</code>): <code>Env</code></p>
+</blockquote>
+<p>Returns a new environment with the provided workspace</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-60">Parameters<a href="#parameters-60" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="workspace">workspace<a href="#workspace" class="hash-link" aria-label="Direct link to workspace" title="Direct link to workspace" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<p>The directory to set as the host filesystem</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-65">Returns<a href="#returns-65" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withworkspaceinput">withWorkspaceInput()<a href="#withworkspaceinput" class="hash-link" aria-label="Direct link to withWorkspaceInput()" title="Direct link to withWorkspaceInput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withWorkspaceInput</strong>(<code>name</code>, <code>value</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Create or update a binding of type Workspace in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-61">Parameters<a href="#parameters-61" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-55">name<a href="#name-55" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-26">value<a href="#value-26" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Workspace"><code>Workspace</code></a></p>
+<p>The Workspace value to assign to the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-52">description<a href="#description-52" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The purpose of the input</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-66">Returns<a href="#returns-66" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withworkspaceoutput">withWorkspaceOutput()<a href="#withworkspaceoutput" class="hash-link" aria-label="Direct link to withWorkspaceOutput()" title="Direct link to withWorkspaceOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withWorkspaceOutput</strong>(<code>name</code>, <code>description</code>): <code>Env</code></p>
+</blockquote>
+<p>Declare a desired Workspace output to be assigned in the environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-62">Parameters<a href="#parameters-62" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-56">name<a href="#name-56" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the binding</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="description-53">description<a href="#description-53" class="hash-link" aria-label="Direct link to description" title="Direct link to description" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A description of the desired value of the binding</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-67">Returns<a href="#returns-67" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Env</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workspace-1">workspace()<a href="#workspace-1" class="hash-link" aria-label="Direct link to workspace()" title="Direct link to workspace()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>workspace</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-68">Returns<a href="#returns-68" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/dagger/dagger/edit/main/docs/current_docs/reference/typescript/api/client.gen/classes/Env.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#extends" class="table-of-contents__link toc-highlight">Extends</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#constructor" class="table-of-contents__link toc-highlight">Constructor</a></li></ul></li><li><a href="#methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#check" class="table-of-contents__link toc-highlight">check()</a></li><li><a href="#checks" class="table-of-contents__link toc-highlight">checks()</a></li><li><a href="#id" class="table-of-contents__link toc-highlight">id()</a></li><li><a href="#input" class="table-of-contents__link toc-highlight">input()</a></li><li><a href="#inputs" class="table-of-contents__link toc-highlight">inputs()</a></li><li><a href="#output" class="table-of-contents__link toc-highlight">output()</a></li><li><a href="#outputs" class="table-of-contents__link toc-highlight">outputs()</a></li><li><a href="#with" class="table-of-contents__link toc-highlight">with()</a></li><li><a href="#withaddressinput" class="table-of-contents__link toc-highlight">withAddressInput()</a></li><li><a href="#withaddressoutput" class="table-of-contents__link toc-highlight">withAddressOutput()</a></li><li><a href="#withcachevolumeinput" class="table-of-contents__link toc-highlight">withCacheVolumeInput()</a></li><li><a href="#withcachevolumeoutput" class="table-of-contents__link toc-highlight">withCacheVolumeOutput()</a></li><li><a href="#withchangesetinput" class="table-of-contents__link toc-highlight">withChangesetInput()</a></li><li><a href="#withchangesetoutput" class="table-of-contents__link toc-highlight">withChangesetOutput()</a></li><li><a href="#withcheckgroupinput" class="table-of-contents__link toc-highlight">withCheckGroupInput()</a></li><li><a href="#withcheckgroupoutput" class="table-of-contents__link toc-highlight">withCheckGroupOutput()</a></li><li><a href="#withcheckinput" class="table-of-contents__link toc-highlight">withCheckInput()</a></li><li><a href="#withcheckoutput" class="table-of-contents__link toc-highlight">withCheckOutput()</a></li><li><a href="#withcloudinput" class="table-of-contents__link toc-highlight">withCloudInput()</a></li><li><a href="#withcloudoutput" class="table-of-contents__link toc-highlight">withCloudOutput()</a></li><li><a href="#withcontainerinput" class="table-of-contents__link toc-highlight">withContainerInput()</a></li><li><a href="#withcontaineroutput" class="table-of-contents__link toc-highlight">withContainerOutput()</a></li><li><a href="#withcurrentmodule" class="table-of-contents__link toc-highlight">withCurrentModule()</a></li><li><a href="#withdirectoryinput" class="table-of-contents__link toc-highlight">withDirectoryInput()</a></li><li><a href="#withdirectoryoutput" class="table-of-contents__link toc-highlight">withDirectoryOutput()</a></li><li><a href="#withenvfileinput" class="table-of-contents__link toc-highlight">withEnvFileInput()</a></li><li><a href="#withenvfileoutput" class="table-of-contents__link toc-highlight">withEnvFileOutput()</a></li><li><a href="#withenvinput" class="table-of-contents__link toc-highlight">withEnvInput()</a></li><li><a href="#withenvoutput" class="table-of-contents__link toc-highlight">withEnvOutput()</a></li><li><a href="#withfileinput" class="table-of-contents__link toc-highlight">withFileInput()</a></li><li><a href="#withfileoutput" class="table-of-contents__link toc-highlight">withFileOutput()</a></li><li><a href="#withgeneratorgroupinput" class="table-of-contents__link toc-highlight">withGeneratorGroupInput()</a></li><li><a href="#withgeneratorgroupoutput" class="table-of-contents__link toc-highlight">withGeneratorGroupOutput()</a></li><li><a href="#withgeneratorinput" class="table-of-contents__link toc-highlight">withGeneratorInput()</a></li><li><a href="#withgeneratoroutput" class="table-of-contents__link toc-highlight">withGeneratorOutput()</a></li><li><a href="#withgitrefinput" class="table-of-contents__link toc-highlight">withGitRefInput()</a></li><li><a href="#withgitrefoutput" class="table-of-contents__link toc-highlight">withGitRefOutput()</a></li><li><a href="#withgitrepositoryinput" class="table-of-contents__link toc-highlight">withGitRepositoryInput()</a></li><li><a href="#withgitrepositoryoutput" class="table-of-contents__link toc-highlight">withGitRepositoryOutput()</a></li><li><a href="#withjsonvalueinput" class="table-of-contents__link toc-highlight">withJSONValueInput()</a></li><li><a href="#withjsonvalueoutput" class="table-of-contents__link toc-highlight">withJSONValueOutput()</a></li><li><a href="#withmainmodule" class="table-of-contents__link toc-highlight">withMainModule()</a></li><li><a href="#withmodule" class="table-of-contents__link toc-highlight"><del>withModule()</del></a></li><li><a href="#withmoduleconfigclientinput" class="table-of-contents__link toc-highlight">withModuleConfigClientInput()</a></li><li><a href="#withmoduleconfigclientoutput" class="table-of-contents__link toc-highlight">withModuleConfigClientOutput()</a></li><li><a href="#withmoduleinput" class="table-of-contents__link toc-highlight">withModuleInput()</a></li><li><a href="#withmoduleoutput" class="table-of-contents__link toc-highlight">withModuleOutput()</a></li><li><a href="#withmodulesourceinput" class="table-of-contents__link toc-highlight">withModuleSourceInput()</a></li><li><a href="#withmodulesourceoutput" class="table-of-contents__link toc-highlight">withModuleSourceOutput()</a></li><li><a href="#withoutoutputs" class="table-of-contents__link toc-highlight">withoutOutputs()</a></li><li><a href="#withsearchresultinput" class="table-of-contents__link toc-highlight">withSearchResultInput()</a></li><li><a href="#withsearchresultoutput" class="table-of-contents__link toc-highlight">withSearchResultOutput()</a></li><li><a href="#withsearchsubmatchinput" class="table-of-contents__link toc-highlight">withSearchSubmatchInput()</a></li><li><a href="#withsearchsubmatchoutput" class="table-of-contents__link toc-highlight">withSearchSubmatchOutput()</a></li><li><a href="#withsecretinput" class="table-of-contents__link toc-highlight">withSecretInput()</a></li><li><a href="#withsecretoutput" class="table-of-contents__link toc-highlight">withSecretOutput()</a></li><li><a href="#withserviceinput" class="table-of-contents__link toc-highlight">withServiceInput()</a></li><li><a href="#withserviceoutput" class="table-of-contents__link toc-highlight">withServiceOutput()</a></li><li><a href="#withsocketinput" class="table-of-contents__link toc-highlight">withSocketInput()</a></li><li><a href="#withsocketoutput" class="table-of-contents__link toc-highlight">withSocketOutput()</a></li><li><a href="#withstatinput" class="table-of-contents__link toc-highlight">withStatInput()</a></li><li><a href="#withstatoutput" class="table-of-contents__link toc-highlight">withStatOutput()</a></li><li><a href="#withstringinput" class="table-of-contents__link toc-highlight">withStringInput()</a></li><li><a href="#withstringoutput" class="table-of-contents__link toc-highlight">withStringOutput()</a></li><li><a href="#withworkspace" class="table-of-contents__link toc-highlight">withWorkspace()</a></li><li><a href="#withworkspaceinput" class="table-of-contents__link toc-highlight">withWorkspaceInput()</a></li><li><a href="#withworkspaceoutput" class="table-of-contents__link toc-highlight">withWorkspaceOutput()</a></li><li><a href="#workspace-1" class="table-of-contents__link toc-highlight">workspace()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <hr>
+        <div class="flex justify-between">
+          <small>© Dagger 2022-2025</small>
+          <div class="flex gap-8">
+              <a target="_blank" class="footer-discord-link" href="https://discord.gg/dagger-io">
+              </a>
+              <a target="_blank" class="footer-x-link" href="https://twitter.com/dagger_io">
+              </a>
+          </div>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>

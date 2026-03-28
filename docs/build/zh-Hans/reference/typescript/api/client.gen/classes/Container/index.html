@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-reference/typescript/api/client.gen/classes/Container" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">TypeScript SDK Reference | Dagger</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Container"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="image" property="og:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="author" content="Dagger"><meta data-rh="true" property="twitter:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TypeScript SDK Reference | Dagger"><meta data-rh="true" name="description" content="An OCI-compatible container, also known as a Docker container."><meta data-rh="true" property="og:description" content="An OCI-compatible container, also known as a Docker container."><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Container"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Container" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Container" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Container" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XEIYPBWGOI-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Dagger" href="/zh-Hans/opensearch.xml">
+
+
+
+
+<link rel="preconnect" href="https://us.i.posthog.com">
+<script>!function(t,e){var o,r,s,a;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,n,p){function c(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(s=t.createElement("script")).type="text/javascript",s.async=!0,s.src=n.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(a=t.getElementsByTagName("script")[0]).parentNode.insertBefore(s,a);var g=e;for(void 0!==p?g=e[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(t){var e="posthog";return"posthog"!==p&&(e+="."+p),t||(e+=" (stub)"),e},g.people.toString=function(){return g.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),r=0;r<o.length;r++)c(g,o[r]);e._i.push([i,n,p])},e.__SV=1)}(document,window.posthog||[]),posthog.init("phc_rykA1oJnBnxTwavpgJKr4RAVXEgCkpyPVi21vQ7906d",{api_host:"https://us.i.posthog.com",id:"default"})</script>
+
+
+<script src="/js/commonroom.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.4801b2b3.css">
+<script src="/zh-Hans/assets/js/runtime~main.0768de0e.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.3687282e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-black.png"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#131126;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">We've launched a brand-new docs site! 🎉 Still want the previous one? You can <a href="https://archive.docs.dagger.io/0.18/">find it in our archive</a>.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a href="https://dagger.io/" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/zh-Hans/img/dagger-logo-black.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40px"><img src="/zh-Hans/img/dagger-logo-white.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40px"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://dagger.io/cloud" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-blog-link dagger-cloud-button" id="dagger-cloud-link">Try Dagger Cloud</a><div class="header-searchbar navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR" style="color:var(--ifm-color-primary-light)"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/use-cases"><span title="Use Cases" class="linkLabel_WmDU">Use Cases</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/faq"><span title="FAQ" class="linkLabel_WmDU">FAQ</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/core-concepts"><span title="Core Concepts" class="categoryLinkLabel_W154">Core Concepts</span></a><button aria-label="Collapse sidebar category &#x27;Core Concepts&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/toolchains"><span title="Toolchains" class="linkLabel_WmDU">Toolchains</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/checks"><span title="Checks" class="linkLabel_WmDU">Checks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/functions"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/quickstarts/basics"><span title="Quickstarts" class="categoryLinkLabel_W154">Quickstarts</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/types"><span title="Core Types" class="categoryLinkLabel_W154">Core Types</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/concepts"><span title="Using Dagger" class="categoryLinkLabel_W154">Using Dagger</span></a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/features"><span title="Features" class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/extending"><span title="Building with Dagger" class="categoryLinkLabel_W154">Building with Dagger</span></a><button aria-label="Expand sidebar category &#x27;Building with Dagger&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/cookbook"><span title="Cookbook" class="linkLabel_WmDU">Cookbook</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/reference/"><span title="Reference" class="categoryLinkLabel_W154">Reference</span></a><button aria-label="Expand sidebar category &#x27;Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Class: Container</h1></header>
+<p>An OCI-compatible container, also known as a Docker container.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extends">Extends<a href="#extends" class="hash-link" aria-label="Direct link to Extends" title="Direct link to Extends" translate="no">​</a></h2>
+<ul>
+<li class=""><code>BaseClient</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructors">Constructors<a href="#constructors" class="hash-link" aria-label="Direct link to Constructors" title="Direct link to Constructors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructor">Constructor<a href="#constructor" class="hash-link" aria-label="Direct link to Constructor" title="Direct link to Constructor" translate="no">​</a></h3>
+<blockquote>
+<p><strong>new Container</strong>(<code>ctx?</code>, <code>_id?</code>, <code>_combinedOutput?</code>, <code>_envVariable?</code>, <code>_exists?</code>, <code>_exitCode?</code>, <code>_export?</code>, <code>_exportImage?</code>, <code>_imageRef?</code>, <code>_label?</code>, <code>_platform?</code>, <code>_publish?</code>, <code>_stderr?</code>, <code>_stdout?</code>, <code>_sync?</code>, <code>_up?</code>, <code>_user?</code>, <code>_workdir?</code>): <code>Container</code></p>
+</blockquote>
+<p>Constructor is used for internal usage only, do not create object from it.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="ctx">ctx?<a href="#ctx" class="hash-link" aria-label="Direct link to ctx?" title="Direct link to ctx?" translate="no">​</a></h5>
+<p><code>Context</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_id">_id?<a href="#_id" class="hash-link" aria-label="Direct link to _id?" title="Direct link to _id?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerID"><code>ContainerID</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_combinedoutput">_combinedOutput?<a href="#_combinedoutput" class="hash-link" aria-label="Direct link to _combinedOutput?" title="Direct link to _combinedOutput?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_envvariable">_envVariable?<a href="#_envvariable" class="hash-link" aria-label="Direct link to _envVariable?" title="Direct link to _envVariable?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_exists">_exists?<a href="#_exists" class="hash-link" aria-label="Direct link to _exists?" title="Direct link to _exists?" translate="no">​</a></h5>
+<p><code>boolean</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_exitcode">_exitCode?<a href="#_exitcode" class="hash-link" aria-label="Direct link to _exitCode?" title="Direct link to _exitCode?" translate="no">​</a></h5>
+<p><code>number</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_export">_export?<a href="#_export" class="hash-link" aria-label="Direct link to _export?" title="Direct link to _export?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_exportimage">_exportImage?<a href="#_exportimage" class="hash-link" aria-label="Direct link to _exportImage?" title="Direct link to _exportImage?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Void"><code>Void</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_imageref">_imageRef?<a href="#_imageref" class="hash-link" aria-label="Direct link to _imageRef?" title="Direct link to _imageRef?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_label">_label?<a href="#_label" class="hash-link" aria-label="Direct link to _label?" title="Direct link to _label?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_platform">_platform?<a href="#_platform" class="hash-link" aria-label="Direct link to _platform?" title="Direct link to _platform?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_publish">_publish?<a href="#_publish" class="hash-link" aria-label="Direct link to _publish?" title="Direct link to _publish?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_stderr">_stderr?<a href="#_stderr" class="hash-link" aria-label="Direct link to _stderr?" title="Direct link to _stderr?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_stdout">_stdout?<a href="#_stdout" class="hash-link" aria-label="Direct link to _stdout?" title="Direct link to _stdout?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_sync">_sync?<a href="#_sync" class="hash-link" aria-label="Direct link to _sync?" title="Direct link to _sync?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerID"><code>ContainerID</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_up">_up?<a href="#_up" class="hash-link" aria-label="Direct link to _up?" title="Direct link to _up?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Void"><code>Void</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_user">_user?<a href="#_user" class="hash-link" aria-label="Direct link to _user?" title="Direct link to _user?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_workdir">_workdir?<a href="#_workdir" class="hash-link" aria-label="Direct link to _workdir?" title="Direct link to _workdir?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns">Returns<a href="#returns" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="overrides">Overrides<a href="#overrides" class="hash-link" aria-label="Direct link to Overrides" title="Direct link to Overrides" translate="no">​</a></h4>
+<p><code>BaseClient.constructor</code></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="asservice">asService()<a href="#asservice" class="hash-link" aria-label="Direct link to asService()" title="Direct link to asService()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>asService</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+</blockquote>
+<p>Turn the container into a Service.</p>
+<p>Be sure to set any exposed ports before this conversion.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts">opts?<a href="#opts" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerAsServiceOpts"><code>ContainerAsServiceOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="astarball">asTarball()<a href="#astarball" class="hash-link" aria-label="Direct link to asTarball()" title="Direct link to asTarball()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>asTarball</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>Package the container state as an OCI image, and return it as a tar archive</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-1">opts?<a href="#opts-1" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerAsTarballOpts"><code>ContainerAsTarballOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combinedoutput">combinedOutput()<a href="#combinedoutput" class="hash-link" aria-label="Direct link to combinedOutput()" title="Direct link to combinedOutput()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>combinedOutput</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The combined buffered standard output and standard error stream of the last executed command</p>
+<p>Returns an error if no command was executed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultargs">defaultArgs()<a href="#defaultargs" class="hash-link" aria-label="Direct link to defaultArgs()" title="Direct link to defaultArgs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>defaultArgs</strong>(): <code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+</blockquote>
+<p>Return the container&#x27;s default arguments.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="directory">directory()<a href="#directory" class="hash-link" aria-label="Direct link to directory()" title="Direct link to directory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>directory</strong>(<code>path</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>Retrieve a directory from the container&#x27;s root filesystem</p>
+<p>Mounts are included.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path">path<a href="#path" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The path of the directory to retrieve (e.g., &quot;./src&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-2">opts?<a href="#opts-2" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerDirectoryOpts"><code>ContainerDirectoryOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dockerhealthcheck">dockerHealthcheck()<a href="#dockerhealthcheck" class="hash-link" aria-label="Direct link to dockerHealthcheck()" title="Direct link to dockerHealthcheck()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>dockerHealthcheck</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/HealthcheckConfig"><code>HealthcheckConfig</code></a></p>
+</blockquote>
+<p>Retrieves this container&#x27;s configured docker healthcheck.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/HealthcheckConfig"><code>HealthcheckConfig</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="entrypoint">entrypoint()<a href="#entrypoint" class="hash-link" aria-label="Direct link to entrypoint()" title="Direct link to entrypoint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>entrypoint</strong>(): <code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+</blockquote>
+<p>Return the container&#x27;s OCI entrypoint.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="envvariable">envVariable()<a href="#envvariable" class="hash-link" aria-label="Direct link to envVariable()" title="Direct link to envVariable()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>envVariable</strong>(<code>name</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Retrieves the value of the specified environment variable.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name">name<a href="#name" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the environment variable to retrieve (e.g., &quot;PATH&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="envvariables">envVariables()<a href="#envvariables" class="hash-link" aria-label="Direct link to envVariables()" title="Direct link to envVariables()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>envVariables</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvVariable"><code>EnvVariable</code></a>[]&gt;</p>
+</blockquote>
+<p>Retrieves the list of environment variables passed to commands.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvVariable"><code>EnvVariable</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exists">exists()<a href="#exists" class="hash-link" aria-label="Direct link to exists()" title="Direct link to exists()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>exists</strong>(<code>path</code>, <code>opts?</code>): <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>check if a file or directory exists</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-1">path<a href="#path-1" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Path to check (e.g., &quot;/file.txt&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-3">opts?<a href="#opts-3" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerExistsOpts"><code>ContainerExistsOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exitcode">exitCode()<a href="#exitcode" class="hash-link" aria-label="Direct link to exitCode()" title="Direct link to exitCode()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>exitCode</strong>(): <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>The exit code of the last executed command</p>
+<p>Returns an error if no command was executed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="experimentalwithallgpus">experimentalWithAllGPUs()<a href="#experimentalwithallgpus" class="hash-link" aria-label="Direct link to experimentalWithAllGPUs()" title="Direct link to experimentalWithAllGPUs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>experimentalWithAllGPUs</strong>(): <code>Container</code></p>
+</blockquote>
+<p>EXPERIMENTAL API! Subject to change/removal at any time.</p>
+<p>Configures all available GPUs on the host to be accessible to this container.</p>
+<p>This currently works for Nvidia devices only.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="experimentalwithgpu">experimentalWithGPU()<a href="#experimentalwithgpu" class="hash-link" aria-label="Direct link to experimentalWithGPU()" title="Direct link to experimentalWithGPU()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>experimentalWithGPU</strong>(<code>devices</code>): <code>Container</code></p>
+</blockquote>
+<p>EXPERIMENTAL API! Subject to change/removal at any time.</p>
+<p>Configures the provided list of devices to be accessible to this container.</p>
+<p>This currently works for Nvidia devices only.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="devices">devices<a href="#devices" class="hash-link" aria-label="Direct link to devices" title="Direct link to devices" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>List of devices to be accessible to this container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export">export()<a href="#export" class="hash-link" aria-label="Direct link to export()" title="Direct link to export()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>export</strong>(<code>path</code>, <code>opts?</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Writes the container as an OCI tarball to the destination file path on the host.</p>
+<p>It can also export platform variants.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-2">path<a href="#path-2" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Host&#x27;s destination path (e.g., &quot;./tarball&quot;).</p>
+<p>Path can be relative to the engine&#x27;s workdir or absolute.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-4">opts?<a href="#opts-4" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerExportOpts"><code>ContainerExportOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exportimage">exportImage()<a href="#exportimage" class="hash-link" aria-label="Direct link to exportImage()" title="Direct link to exportImage()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>exportImage</strong>(<code>name</code>, <code>opts?</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Exports the container as an image to the host&#x27;s container image store.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-1">name<a href="#name-1" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Name of image to export to in the host&#x27;s store</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-5">opts?<a href="#opts-5" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerExportImageOpts"><code>ContainerExportImageOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-15">Returns<a href="#returns-15" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exposedports">exposedPorts()<a href="#exposedports" class="hash-link" aria-label="Direct link to exposedPorts()" title="Direct link to exposedPorts()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>exposedPorts</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Port"><code>Port</code></a>[]&gt;</p>
+</blockquote>
+<p>Retrieves the list of exposed ports.</p>
+<p>This includes ports already exposed by the image, even if not explicitly added with dagger.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-16">Returns<a href="#returns-16" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Port"><code>Port</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="file">file()<a href="#file" class="hash-link" aria-label="Direct link to file()" title="Direct link to file()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>file</strong>(<code>path</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>Retrieves a file at the given path.</p>
+<p>Mounts are included.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-3">path<a href="#path-3" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The path of the file to retrieve (e.g., &quot;./README.md&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-6">opts?<a href="#opts-6" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerFileOpts"><code>ContainerFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-17">Returns<a href="#returns-17" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="from">from()<a href="#from" class="hash-link" aria-label="Direct link to from()" title="Direct link to from()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>from</strong>(<code>address</code>): <code>Container</code></p>
+</blockquote>
+<p>Download a container image, and apply it to the container state. All previous state will be lost.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="address">address<a href="#address" class="hash-link" aria-label="Direct link to address" title="Direct link to address" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Address of the container image to download, in standard OCI ref format. Example:&quot;registry.dagger.io/engine<!-- -->:latest<!-- -->&quot;</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-18">Returns<a href="#returns-18" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id()<a href="#id" class="hash-link" aria-label="Direct link to id()" title="Direct link to id()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>id</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerID"><code>ContainerID</code></a>&gt;</p>
+</blockquote>
+<p>A unique identifier for this Container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-19">Returns<a href="#returns-19" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerID"><code>ContainerID</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="imageref">imageRef()<a href="#imageref" class="hash-link" aria-label="Direct link to imageRef()" title="Direct link to imageRef()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>imageRef</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The unique image reference which can only be retrieved immediately after the &#x27;Container.From&#x27; call.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-20">Returns<a href="#returns-20" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="import_">import_()<a href="#import_" class="hash-link" aria-label="Direct link to import_()" title="Direct link to import_()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>import_</strong>(<code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Reads the container from an OCI tarball.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-11">Parameters<a href="#parameters-11" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source">source<a href="#source" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<p>File to read the container from.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-7">opts?<a href="#opts-7" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerImportOpts"><code>ContainerImportOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-21">Returns<a href="#returns-21" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="label">label()<a href="#label" class="hash-link" aria-label="Direct link to label()" title="Direct link to label()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>label</strong>(<code>name</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Retrieves the value of the specified label.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-12">Parameters<a href="#parameters-12" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-2">name<a href="#name-2" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the label (e.g., &quot;org.opencontainers.artifact.created&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labels">labels()<a href="#labels" class="hash-link" aria-label="Direct link to labels()" title="Direct link to labels()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>labels</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Label"><code>Label</code></a>[]&gt;</p>
+</blockquote>
+<p>Retrieves the list of labels passed to container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-23">Returns<a href="#returns-23" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Label"><code>Label</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mounts">mounts()<a href="#mounts" class="hash-link" aria-label="Direct link to mounts()" title="Direct link to mounts()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>mounts</strong>(): <code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+</blockquote>
+<p>Retrieves the list of paths where a directory is mounted.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-24">Returns<a href="#returns-24" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform">platform()<a href="#platform" class="hash-link" aria-label="Direct link to platform()" title="Direct link to platform()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>platform</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a>&gt;</p>
+</blockquote>
+<p>The platform this container executes and publishes as.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publish">publish()<a href="#publish" class="hash-link" aria-label="Direct link to publish()" title="Direct link to publish()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>publish</strong>(<code>address</code>, <code>opts?</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Package the container state as an OCI image, and publish it to a registry</p>
+<p>Returns the fully qualified address of the published image, with digest</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-13">Parameters<a href="#parameters-13" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="address-1">address<a href="#address-1" class="hash-link" aria-label="Direct link to address" title="Direct link to address" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The OCI address to publish to</p>
+<p>Same format as &quot;docker push&quot;. Example: &quot;registry.example.com/user/repo<!-- -->:tag<!-- -->&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-8">opts?<a href="#opts-8" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerPublishOpts"><code>ContainerPublishOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-26">Returns<a href="#returns-26" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rootfs">rootfs()<a href="#rootfs" class="hash-link" aria-label="Direct link to rootfs()" title="Direct link to rootfs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>rootfs</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>Return a snapshot of the container&#x27;s root filesystem. The snapshot can be modified then written back using withRootfs. Use that method for filesystem modifications.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-27">Returns<a href="#returns-27" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stat">stat()<a href="#stat" class="hash-link" aria-label="Direct link to stat()" title="Direct link to stat()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>stat</strong>(<code>path</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Stat"><code>Stat</code></a></p>
+</blockquote>
+<p>Return file status</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-14">Parameters<a href="#parameters-14" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-4">path<a href="#path-4" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Path to check (e.g., &quot;/file.txt&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-9">opts?<a href="#opts-9" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerStatOpts"><code>ContainerStatOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-28">Returns<a href="#returns-28" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Stat"><code>Stat</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stderr">stderr()<a href="#stderr" class="hash-link" aria-label="Direct link to stderr()" title="Direct link to stderr()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>stderr</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The buffered standard error stream of the last executed command</p>
+<p>Returns an error if no command was executed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-29">Returns<a href="#returns-29" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stdout">stdout()<a href="#stdout" class="hash-link" aria-label="Direct link to stdout()" title="Direct link to stdout()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>stdout</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>The buffered standard output stream of the last executed command</p>
+<p>Returns an error if no command was executed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-30">Returns<a href="#returns-30" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sync">sync()<a href="#sync" class="hash-link" aria-label="Direct link to sync()" title="Direct link to sync()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sync</strong>(): <code>Promise</code>&lt;<code>Container</code>&gt;</p>
+</blockquote>
+<p>Forces evaluation of the pipeline in the engine.</p>
+<p>It doesn&#x27;t run the default command if no exec has been set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-31">Returns<a href="#returns-31" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>Container</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="terminal">terminal()<a href="#terminal" class="hash-link" aria-label="Direct link to terminal()" title="Direct link to terminal()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>terminal</strong>(<code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Opens an interactive terminal for this container using its configured default terminal command if not overridden by args (or sh as a fallback default).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-15">Parameters<a href="#parameters-15" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-10">opts?<a href="#opts-10" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerTerminalOpts"><code>ContainerTerminalOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-32">Returns<a href="#returns-32" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="up">up()<a href="#up" class="hash-link" aria-label="Direct link to up()" title="Direct link to up()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>up</strong>(<code>opts?</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Starts a Service and creates a tunnel that forwards traffic from the caller&#x27;s network to that service.</p>
+<p>Be sure to set any exposed ports before calling this api.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-16">Parameters<a href="#parameters-16" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-11">opts?<a href="#opts-11" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerUpOpts"><code>ContainerUpOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-33">Returns<a href="#returns-33" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="user">user()<a href="#user" class="hash-link" aria-label="Direct link to user()" title="Direct link to user()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>user</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Retrieves the user to be set for all commands.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-34">Returns<a href="#returns-34" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="with">with()<a href="#with" class="hash-link" aria-label="Direct link to with()" title="Direct link to with()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>with</strong>(<code>arg</code>): <code>Container</code></p>
+</blockquote>
+<p>Call the provided function with current Container.</p>
+<p>This is useful for reusability and readability by not breaking the calling chain.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-17">Parameters<a href="#parameters-17" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="arg">arg<a href="#arg" class="hash-link" aria-label="Direct link to arg" title="Direct link to arg" translate="no">​</a></h5>
+<p>(<code>param</code>) =&gt; <code>Container</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-35">Returns<a href="#returns-35" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withannotation">withAnnotation()<a href="#withannotation" class="hash-link" aria-label="Direct link to withAnnotation()" title="Direct link to withAnnotation()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withAnnotation</strong>(<code>name</code>, <code>value</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus the given OCI annotation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-18">Parameters<a href="#parameters-18" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-3">name<a href="#name-3" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the annotation.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value">value<a href="#value" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The value of the annotation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-36">Returns<a href="#returns-36" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdefaultargs">withDefaultArgs()<a href="#withdefaultargs" class="hash-link" aria-label="Direct link to withDefaultArgs()" title="Direct link to withDefaultArgs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDefaultArgs</strong>(<code>args</code>): <code>Container</code></p>
+</blockquote>
+<p>Configures default arguments for future commands. Like CMD in Dockerfile.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="args">args<a href="#args" class="hash-link" aria-label="Direct link to args" title="Direct link to args" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>Arguments to prepend to future executions (e.g., [&quot;-v&quot;, &quot;--no-cache&quot;]).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-37">Returns<a href="#returns-37" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdefaultterminalcmd">withDefaultTerminalCmd()<a href="#withdefaultterminalcmd" class="hash-link" aria-label="Direct link to withDefaultTerminalCmd()" title="Direct link to withDefaultTerminalCmd()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDefaultTerminalCmd</strong>(<code>args</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Set the default command to invoke for the container&#x27;s terminal API.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-20">Parameters<a href="#parameters-20" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="args-1">args<a href="#args-1" class="hash-link" aria-label="Direct link to args" title="Direct link to args" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>The args of the command.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-12">opts?<a href="#opts-12" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithDefaultTerminalCmdOpts"><code>ContainerWithDefaultTerminalCmdOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-38">Returns<a href="#returns-38" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdirectory">withDirectory()<a href="#withdirectory" class="hash-link" aria-label="Direct link to withDirectory()" title="Direct link to withDirectory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDirectory</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a new container snapshot, with a directory added to its filesystem</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-21">Parameters<a href="#parameters-21" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-5">path<a href="#path-5" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the written directory (e.g., &quot;/tmp/directory&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-1">source<a href="#source-1" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<p>Identifier of the directory to write</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-13">opts?<a href="#opts-13" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithDirectoryOpts"><code>ContainerWithDirectoryOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-39">Returns<a href="#returns-39" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withdockerhealthcheck">withDockerHealthcheck()<a href="#withdockerhealthcheck" class="hash-link" aria-label="Direct link to withDockerHealthcheck()" title="Direct link to withDockerHealthcheck()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withDockerHealthcheck</strong>(<code>args</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container with the specificed docker healtcheck command set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-22">Parameters<a href="#parameters-22" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="args-2">args<a href="#args-2" class="hash-link" aria-label="Direct link to args" title="Direct link to args" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>Healthcheck command to execute. Example: [&quot;go&quot;, &quot;run&quot;, &quot;main.go&quot;].</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-14">opts?<a href="#opts-14" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithDockerHealthcheckOpts"><code>ContainerWithDockerHealthcheckOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-40">Returns<a href="#returns-40" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withentrypoint">withEntrypoint()<a href="#withentrypoint" class="hash-link" aria-label="Direct link to withEntrypoint()" title="Direct link to withEntrypoint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEntrypoint</strong>(<code>args</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Set an OCI-style entrypoint. It will be included in the container&#x27;s OCI configuration. Note, withExec ignores the entrypoint by default.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-23">Parameters<a href="#parameters-23" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="args-3">args<a href="#args-3" class="hash-link" aria-label="Direct link to args" title="Direct link to args" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>Arguments of the entrypoint. Example: [&quot;go&quot;, &quot;run&quot;].</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-15">opts?<a href="#opts-15" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithEntrypointOpts"><code>ContainerWithEntrypointOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-41">Returns<a href="#returns-41" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvfilevariables">withEnvFileVariables()<a href="#withenvfilevariables" class="hash-link" aria-label="Direct link to withEnvFileVariables()" title="Direct link to withEnvFileVariables()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvFileVariables</strong>(<code>source</code>): <code>Container</code></p>
+</blockquote>
+<p>Export environment variables from an env-file to the container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-24">Parameters<a href="#parameters-24" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-2">source<a href="#source-2" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+<p>Identifier of the envfile</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-42">Returns<a href="#returns-42" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withenvvariable">withEnvVariable()<a href="#withenvvariable" class="hash-link" aria-label="Direct link to withEnvVariable()" title="Direct link to withEnvVariable()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withEnvVariable</strong>(<code>name</code>, <code>value</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Set a new environment variable in the container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-25">Parameters<a href="#parameters-25" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-4">name<a href="#name-4" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Name of the environment variable (e.g., &quot;HOST&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-1">value<a href="#value-1" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Value of the environment variable. (e.g., &quot;localhost&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-16">opts?<a href="#opts-16" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithEnvVariableOpts"><code>ContainerWithEnvVariableOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-43">Returns<a href="#returns-43" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="witherror">withError()<a href="#witherror" class="hash-link" aria-label="Direct link to withError()" title="Direct link to withError()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withError</strong>(<code>err</code>): <code>Container</code></p>
+</blockquote>
+<p>Raise an error.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-26">Parameters<a href="#parameters-26" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="err">err<a href="#err" class="hash-link" aria-label="Direct link to err" title="Direct link to err" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Message of the error to raise. If empty, the error will be ignored.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-44">Returns<a href="#returns-44" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withexec">withExec()<a href="#withexec" class="hash-link" aria-label="Direct link to withExec()" title="Direct link to withExec()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withExec</strong>(<code>args</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Execute a command in the container, and return a new snapshot of the container state after execution.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-27">Parameters<a href="#parameters-27" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="args-4">args<a href="#args-4" class="hash-link" aria-label="Direct link to args" title="Direct link to args" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>Command to execute. Must be valid exec() arguments, not a shell command. Example: [&quot;go&quot;, &quot;run&quot;, &quot;main.go&quot;].</p>
+<p>To run a shell command, execute the shell and pass the shell command as argument. Example: [&quot;sh&quot;, &quot;-c&quot;, &quot;ls -l | grep foo&quot;]</p>
+<p>Defaults to the container&#x27;s default arguments (see &quot;defaultArgs&quot; and &quot;withDefaultArgs&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-17">opts?<a href="#opts-17" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithExecOpts"><code>ContainerWithExecOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-45">Returns<a href="#returns-45" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withexposedport">withExposedPort()<a href="#withexposedport" class="hash-link" aria-label="Direct link to withExposedPort()" title="Direct link to withExposedPort()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withExposedPort</strong>(<code>port</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Expose a network port. Like EXPOSE in Dockerfile (but with healthcheck support)</p>
+<p>Exposed ports serve two purposes:</p>
+<ul>
+<li class="">
+<p>For health checks and introspection, when running services</p>
+</li>
+<li class="">
+<p>For setting the EXPOSE OCI field when publishing the container</p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-28">Parameters<a href="#parameters-28" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="port">port<a href="#port" class="hash-link" aria-label="Direct link to port" title="Direct link to port" translate="no">​</a></h5>
+<p><code>number</code></p>
+<p>Port number to expose. Example: 8080</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-18">opts?<a href="#opts-18" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithExposedPortOpts"><code>ContainerWithExposedPortOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-46">Returns<a href="#returns-46" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withfile">withFile()<a href="#withfile" class="hash-link" aria-label="Direct link to withFile()" title="Direct link to withFile()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withFile</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a container snapshot with a file added</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-29">Parameters<a href="#parameters-29" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-6">path<a href="#path-6" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Path of the new file. Example: &quot;/path/to/new-file.txt&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-3">source<a href="#source-3" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<p>File to add</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-19">opts?<a href="#opts-19" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithFileOpts"><code>ContainerWithFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-47">Returns<a href="#returns-47" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withfiles">withFiles()<a href="#withfiles" class="hash-link" aria-label="Direct link to withFiles()" title="Direct link to withFiles()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withFiles</strong>(<code>path</code>, <code>sources</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus the contents of the given files copied to the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-30">Parameters<a href="#parameters-30" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-7">path<a href="#path-7" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location where copied files should be placed (e.g., &quot;/src&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="sources">sources<a href="#sources" class="hash-link" aria-label="Direct link to sources" title="Direct link to sources" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a>[]</p>
+<p>Identifiers of the files to copy.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-20">opts?<a href="#opts-20" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithFilesOpts"><code>ContainerWithFilesOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-48">Returns<a href="#returns-48" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withlabel">withLabel()<a href="#withlabel" class="hash-link" aria-label="Direct link to withLabel()" title="Direct link to withLabel()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withLabel</strong>(<code>name</code>, <code>value</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus the given label.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-31">Parameters<a href="#parameters-31" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-5">name<a href="#name-5" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the label (e.g., &quot;org.opencontainers.artifact.created&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-2">value<a href="#value-2" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The value of the label (e.g., &quot;2023-01-01T00:00:00Z&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-49">Returns<a href="#returns-49" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmountedcache">withMountedCache()<a href="#withmountedcache" class="hash-link" aria-label="Direct link to withMountedCache()" title="Direct link to withMountedCache()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMountedCache</strong>(<code>path</code>, <code>cache</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a cache volume mounted at the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-32">Parameters<a href="#parameters-32" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-8">path<a href="#path-8" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the cache directory (e.g., &quot;/root/.npm&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="cache">cache<a href="#cache" class="hash-link" aria-label="Direct link to cache" title="Direct link to cache" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+<p>Identifier of the cache volume to mount.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-21">opts?<a href="#opts-21" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithMountedCacheOpts"><code>ContainerWithMountedCacheOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-50">Returns<a href="#returns-50" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmounteddirectory">withMountedDirectory()<a href="#withmounteddirectory" class="hash-link" aria-label="Direct link to withMountedDirectory()" title="Direct link to withMountedDirectory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMountedDirectory</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a directory mounted at the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-33">Parameters<a href="#parameters-33" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-9">path<a href="#path-9" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the mounted directory (e.g., &quot;/mnt/directory&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-4">source<a href="#source-4" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<p>Identifier of the mounted directory.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-22">opts?<a href="#opts-22" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithMountedDirectoryOpts"><code>ContainerWithMountedDirectoryOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-51">Returns<a href="#returns-51" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmountedfile">withMountedFile()<a href="#withmountedfile" class="hash-link" aria-label="Direct link to withMountedFile()" title="Direct link to withMountedFile()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMountedFile</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a file mounted at the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-34">Parameters<a href="#parameters-34" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-10">path<a href="#path-10" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the mounted file (e.g., &quot;/tmp/file.txt&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-5">source<a href="#source-5" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<p>Identifier of the mounted file.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-23">opts?<a href="#opts-23" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithMountedFileOpts"><code>ContainerWithMountedFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmountedsecret">withMountedSecret()<a href="#withmountedsecret" class="hash-link" aria-label="Direct link to withMountedSecret()" title="Direct link to withMountedSecret()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMountedSecret</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a secret mounted into a file at the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-35">Parameters<a href="#parameters-35" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-11">path<a href="#path-11" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the secret file (e.g., &quot;/tmp/secret.txt&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-6">source<a href="#source-6" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<p>Identifier of the secret to mount.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-24">opts?<a href="#opts-24" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithMountedSecretOpts"><code>ContainerWithMountedSecretOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-53">Returns<a href="#returns-53" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withmountedtemp">withMountedTemp()<a href="#withmountedtemp" class="hash-link" aria-label="Direct link to withMountedTemp()" title="Direct link to withMountedTemp()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withMountedTemp</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a temporary directory mounted at the given path. Any writes will be ephemeral to a single withExec call; they will not be persisted to subsequent withExecs.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-36">Parameters<a href="#parameters-36" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-12">path<a href="#path-12" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the temporary directory (e.g., &quot;/tmp/temp_dir&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-25">opts?<a href="#opts-25" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithMountedTempOpts"><code>ContainerWithMountedTempOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-54">Returns<a href="#returns-54" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withnewfile">withNewFile()<a href="#withnewfile" class="hash-link" aria-label="Direct link to withNewFile()" title="Direct link to withNewFile()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withNewFile</strong>(<code>path</code>, <code>contents</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a new container snapshot, with a file added to its filesystem with text content</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-37">Parameters<a href="#parameters-37" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-13">path<a href="#path-13" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Path of the new file. May be relative or absolute. Example: &quot;README.md&quot; or &quot;/etc/profile&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="contents">contents<a href="#contents" class="hash-link" aria-label="Direct link to contents" title="Direct link to contents" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Contents of the new file. Example: &quot;Hello world!&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-26">opts?<a href="#opts-26" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithNewFileOpts"><code>ContainerWithNewFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-55">Returns<a href="#returns-55" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutannotation">withoutAnnotation()<a href="#withoutannotation" class="hash-link" aria-label="Direct link to withoutAnnotation()" title="Direct link to withoutAnnotation()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutAnnotation</strong>(<code>name</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container minus the given OCI annotation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-38">Parameters<a href="#parameters-38" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-6">name<a href="#name-6" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the annotation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-56">Returns<a href="#returns-56" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutdefaultargs">withoutDefaultArgs()<a href="#withoutdefaultargs" class="hash-link" aria-label="Direct link to withoutDefaultArgs()" title="Direct link to withoutDefaultArgs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutDefaultArgs</strong>(): <code>Container</code></p>
+</blockquote>
+<p>Remove the container&#x27;s default arguments.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-57">Returns<a href="#returns-57" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutdirectory">withoutDirectory()<a href="#withoutdirectory" class="hash-link" aria-label="Direct link to withoutDirectory()" title="Direct link to withoutDirectory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutDirectory</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a new container snapshot, with a directory removed from its filesystem</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-39">Parameters<a href="#parameters-39" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-14">path<a href="#path-14" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the directory to remove (e.g., &quot;.github/&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-27">opts?<a href="#opts-27" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutDirectoryOpts"><code>ContainerWithoutDirectoryOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-58">Returns<a href="#returns-58" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutdockerhealthcheck">withoutDockerHealthcheck()<a href="#withoutdockerhealthcheck" class="hash-link" aria-label="Direct link to withoutDockerHealthcheck()" title="Direct link to withoutDockerHealthcheck()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutDockerHealthcheck</strong>(): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container without a configured docker healtcheck command.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-59">Returns<a href="#returns-59" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutentrypoint">withoutEntrypoint()<a href="#withoutentrypoint" class="hash-link" aria-label="Direct link to withoutEntrypoint()" title="Direct link to withoutEntrypoint()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutEntrypoint</strong>(<code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Reset the container&#x27;s OCI entrypoint.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-40">Parameters<a href="#parameters-40" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-28">opts?<a href="#opts-28" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutEntrypointOpts"><code>ContainerWithoutEntrypointOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-60">Returns<a href="#returns-60" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutenvvariable">withoutEnvVariable()<a href="#withoutenvvariable" class="hash-link" aria-label="Direct link to withoutEnvVariable()" title="Direct link to withoutEnvVariable()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutEnvVariable</strong>(<code>name</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container minus the given environment variable.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-41">Parameters<a href="#parameters-41" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-7">name<a href="#name-7" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the environment variable (e.g., &quot;HOST&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-61">Returns<a href="#returns-61" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutexposedport">withoutExposedPort()<a href="#withoutexposedport" class="hash-link" aria-label="Direct link to withoutExposedPort()" title="Direct link to withoutExposedPort()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutExposedPort</strong>(<code>port</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Unexpose a previously exposed port.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-42">Parameters<a href="#parameters-42" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="port-1">port<a href="#port-1" class="hash-link" aria-label="Direct link to port" title="Direct link to port" translate="no">​</a></h5>
+<p><code>number</code></p>
+<p>Port number to unexpose</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-29">opts?<a href="#opts-29" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutExposedPortOpts"><code>ContainerWithoutExposedPortOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-62">Returns<a href="#returns-62" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutfile">withoutFile()<a href="#withoutfile" class="hash-link" aria-label="Direct link to withoutFile()" title="Direct link to withoutFile()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutFile</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container with the file at the given path removed.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-43">Parameters<a href="#parameters-43" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-15">path<a href="#path-15" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the file to remove (e.g., &quot;/file.txt&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-30">opts?<a href="#opts-30" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutFileOpts"><code>ContainerWithoutFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-63">Returns<a href="#returns-63" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutfiles">withoutFiles()<a href="#withoutfiles" class="hash-link" aria-label="Direct link to withoutFiles()" title="Direct link to withoutFiles()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutFiles</strong>(<code>paths</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a new container spanshot with specified files removed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-44">Parameters<a href="#parameters-44" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="paths">paths<a href="#paths" class="hash-link" aria-label="Direct link to paths" title="Direct link to paths" translate="no">​</a></h5>
+<p><code>string</code>[]</p>
+<p>Paths of the files to remove. Example: [&quot;foo.txt, &quot;/root/.ssh/config&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-31">opts?<a href="#opts-31" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutFilesOpts"><code>ContainerWithoutFilesOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-64">Returns<a href="#returns-64" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutlabel">withoutLabel()<a href="#withoutlabel" class="hash-link" aria-label="Direct link to withoutLabel()" title="Direct link to withoutLabel()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutLabel</strong>(<code>name</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container minus the given environment label.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-45">Parameters<a href="#parameters-45" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-8">name<a href="#name-8" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the label to remove (e.g., &quot;org.opencontainers.artifact.created&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-65">Returns<a href="#returns-65" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutmount">withoutMount()<a href="#withoutmount" class="hash-link" aria-label="Direct link to withoutMount()" title="Direct link to withoutMount()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutMount</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container after unmounting everything at the given path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-46">Parameters<a href="#parameters-46" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-16">path<a href="#path-16" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the cache directory (e.g., &quot;/root/.npm&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-32">opts?<a href="#opts-32" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutMountOpts"><code>ContainerWithoutMountOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-66">Returns<a href="#returns-66" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutregistryauth">withoutRegistryAuth()<a href="#withoutregistryauth" class="hash-link" aria-label="Direct link to withoutRegistryAuth()" title="Direct link to withoutRegistryAuth()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutRegistryAuth</strong>(<code>address</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container without the registry authentication of a given address.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-47">Parameters<a href="#parameters-47" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="address-2">address<a href="#address-2" class="hash-link" aria-label="Direct link to address" title="Direct link to address" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Registry&#x27;s address to remove the authentication from.</p>
+<p>Formatted as [host]/[user]/[repo]:[tag] (e.g. docker.io/dagger/dagger<!-- -->:main<!-- -->).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-67">Returns<a href="#returns-67" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutsecretvariable">withoutSecretVariable()<a href="#withoutsecretvariable" class="hash-link" aria-label="Direct link to withoutSecretVariable()" title="Direct link to withoutSecretVariable()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutSecretVariable</strong>(<code>name</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container minus the given environment variable containing the secret.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-48">Parameters<a href="#parameters-48" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-9">name<a href="#name-9" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The name of the environment variable (e.g., &quot;HOST&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-68">Returns<a href="#returns-68" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutunixsocket">withoutUnixSocket()<a href="#withoutunixsocket" class="hash-link" aria-label="Direct link to withoutUnixSocket()" title="Direct link to withoutUnixSocket()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutUnixSocket</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container with a previously added Unix socket removed.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-49">Parameters<a href="#parameters-49" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-17">path<a href="#path-17" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the socket to remove (e.g., &quot;/tmp/socket&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-33">opts?<a href="#opts-33" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithoutUnixSocketOpts"><code>ContainerWithoutUnixSocketOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-69">Returns<a href="#returns-69" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutuser">withoutUser()<a href="#withoutuser" class="hash-link" aria-label="Direct link to withoutUser()" title="Direct link to withoutUser()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutUser</strong>(): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container with an unset command user.</p>
+<p>Should default to root.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-70">Returns<a href="#returns-70" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withoutworkdir">withoutWorkdir()<a href="#withoutworkdir" class="hash-link" aria-label="Direct link to withoutWorkdir()" title="Direct link to withoutWorkdir()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withoutWorkdir</strong>(): <code>Container</code></p>
+</blockquote>
+<p>Unset the container&#x27;s working directory.</p>
+<p>Should default to &quot;/&quot;.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-71">Returns<a href="#returns-71" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withregistryauth">withRegistryAuth()<a href="#withregistryauth" class="hash-link" aria-label="Direct link to withRegistryAuth()" title="Direct link to withRegistryAuth()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withRegistryAuth</strong>(<code>address</code>, <code>username</code>, <code>secret</code>): <code>Container</code></p>
+</blockquote>
+<p>Attach credentials for future publishing to a registry. Use in combination with publish</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-50">Parameters<a href="#parameters-50" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="address-3">address<a href="#address-3" class="hash-link" aria-label="Direct link to address" title="Direct link to address" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The image address that needs authentication. Same format as &quot;docker push&quot;. Example: &quot;registry.dagger.io/dagger<!-- -->:latest<!-- -->&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="username">username<a href="#username" class="hash-link" aria-label="Direct link to username" title="Direct link to username" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The username to authenticate with. Example: &quot;alice&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="secret">secret<a href="#secret" class="hash-link" aria-label="Direct link to secret" title="Direct link to secret" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<p>The API key, password or token to authenticate to this registry</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-72">Returns<a href="#returns-72" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withrootfs">withRootfs()<a href="#withrootfs" class="hash-link" aria-label="Direct link to withRootfs()" title="Direct link to withRootfs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withRootfs</strong>(<code>directory</code>): <code>Container</code></p>
+</blockquote>
+<p>Change the container&#x27;s root filesystem. The previous root filesystem will be lost.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-51">Parameters<a href="#parameters-51" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="directory-1">directory<a href="#directory-1" class="hash-link" aria-label="Direct link to directory" title="Direct link to directory" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<p>The new root filesystem.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-73">Returns<a href="#returns-73" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsecretvariable">withSecretVariable()<a href="#withsecretvariable" class="hash-link" aria-label="Direct link to withSecretVariable()" title="Direct link to withSecretVariable()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSecretVariable</strong>(<code>name</code>, <code>secret</code>): <code>Container</code></p>
+</blockquote>
+<p>Set a new environment variable, using a secret value</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-52">Parameters<a href="#parameters-52" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-10">name<a href="#name-10" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Name of the secret variable (e.g., &quot;API_SECRET&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="secret-1">secret<a href="#secret-1" class="hash-link" aria-label="Direct link to secret" title="Direct link to secret" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<p>Identifier of the secret value.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-74">Returns<a href="#returns-74" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withservicebinding">withServiceBinding()<a href="#withservicebinding" class="hash-link" aria-label="Direct link to withServiceBinding()" title="Direct link to withServiceBinding()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withServiceBinding</strong>(<code>alias</code>, <code>service</code>): <code>Container</code></p>
+</blockquote>
+<p>Establish a runtime dependency from a container to a network service.</p>
+<p>The service will be started automatically when needed and detached when it is no longer needed, executing the default command if none is set.</p>
+<p>The service will be reachable from the container via the provided hostname alias.</p>
+<p>The service dependency will also convey to any files or directories produced by the container.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-53">Parameters<a href="#parameters-53" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="alias">alias<a href="#alias" class="hash-link" aria-label="Direct link to alias" title="Direct link to alias" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Hostname that will resolve to the target service (only accessible from within this container)</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="service">service<a href="#service" class="hash-link" aria-label="Direct link to service" title="Direct link to service" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+<p>The target service</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-75">Returns<a href="#returns-75" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withsymlink">withSymlink()<a href="#withsymlink" class="hash-link" aria-label="Direct link to withSymlink()" title="Direct link to withSymlink()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withSymlink</strong>(<code>target</code>, <code>linkName</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Return a snapshot with a symlink</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-54">Parameters<a href="#parameters-54" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="target">target<a href="#target" class="hash-link" aria-label="Direct link to target" title="Direct link to target" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the file or directory to link to (e.g., &quot;/existing/file&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="linkname">linkName<a href="#linkname" class="hash-link" aria-label="Direct link to linkName" title="Direct link to linkName" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location where the symbolic link will be created (e.g., &quot;/new-file-link&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-34">opts?<a href="#opts-34" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithSymlinkOpts"><code>ContainerWithSymlinkOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-76">Returns<a href="#returns-76" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withunixsocket">withUnixSocket()<a href="#withunixsocket" class="hash-link" aria-label="Direct link to withUnixSocket()" title="Direct link to withUnixSocket()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUnixSocket</strong>(<code>path</code>, <code>source</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container plus a socket forwarded to the given Unix socket path.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-55">Parameters<a href="#parameters-55" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-18">path<a href="#path-18" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Location of the forwarded Unix socket (e.g., &quot;/tmp/socket&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-7">source<a href="#source-7" class="hash-link" aria-label="Direct link to source" title="Direct link to source" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Socket"><code>Socket</code></a></p>
+<p>Identifier of the socket to forward.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-35">opts?<a href="#opts-35" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithUnixSocketOpts"><code>ContainerWithUnixSocketOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-77">Returns<a href="#returns-77" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withuser">withUser()<a href="#withuser" class="hash-link" aria-label="Direct link to withUser()" title="Direct link to withUser()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withUser</strong>(<code>name</code>): <code>Container</code></p>
+</blockquote>
+<p>Retrieves this container with a different command user.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-56">Parameters<a href="#parameters-56" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-11">name<a href="#name-11" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The user to set (e.g., &quot;root&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-78">Returns<a href="#returns-78" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="withworkdir">withWorkdir()<a href="#withworkdir" class="hash-link" aria-label="Direct link to withWorkdir()" title="Direct link to withWorkdir()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>withWorkdir</strong>(<code>path</code>, <code>opts?</code>): <code>Container</code></p>
+</blockquote>
+<p>Change the container&#x27;s working directory. Like WORKDIR in Dockerfile.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-57">Parameters<a href="#parameters-57" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-19">path<a href="#path-19" class="hash-link" aria-label="Direct link to path" title="Direct link to path" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The path to set as the working directory (e.g., &quot;/app&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-36">opts?<a href="#opts-36" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerWithWorkdirOpts"><code>ContainerWithWorkdirOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-79">Returns<a href="#returns-79" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Container</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workdir">workdir()<a href="#workdir" class="hash-link" aria-label="Direct link to workdir()" title="Direct link to workdir()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>workdir</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Retrieves the working directory for all commands.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-80">Returns<a href="#returns-80" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/dagger/dagger/edit/main/docs/current_docs/reference/typescript/api/client.gen/classes/Container.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#extends" class="table-of-contents__link toc-highlight">Extends</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#constructor" class="table-of-contents__link toc-highlight">Constructor</a></li></ul></li><li><a href="#methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#asservice" class="table-of-contents__link toc-highlight">asService()</a></li><li><a href="#astarball" class="table-of-contents__link toc-highlight">asTarball()</a></li><li><a href="#combinedoutput" class="table-of-contents__link toc-highlight">combinedOutput()</a></li><li><a href="#defaultargs" class="table-of-contents__link toc-highlight">defaultArgs()</a></li><li><a href="#directory" class="table-of-contents__link toc-highlight">directory()</a></li><li><a href="#dockerhealthcheck" class="table-of-contents__link toc-highlight">dockerHealthcheck()</a></li><li><a href="#entrypoint" class="table-of-contents__link toc-highlight">entrypoint()</a></li><li><a href="#envvariable" class="table-of-contents__link toc-highlight">envVariable()</a></li><li><a href="#envvariables" class="table-of-contents__link toc-highlight">envVariables()</a></li><li><a href="#exists" class="table-of-contents__link toc-highlight">exists()</a></li><li><a href="#exitcode" class="table-of-contents__link toc-highlight">exitCode()</a></li><li><a href="#experimentalwithallgpus" class="table-of-contents__link toc-highlight">experimentalWithAllGPUs()</a></li><li><a href="#experimentalwithgpu" class="table-of-contents__link toc-highlight">experimentalWithGPU()</a></li><li><a href="#export" class="table-of-contents__link toc-highlight">export()</a></li><li><a href="#exportimage" class="table-of-contents__link toc-highlight">exportImage()</a></li><li><a href="#exposedports" class="table-of-contents__link toc-highlight">exposedPorts()</a></li><li><a href="#file" class="table-of-contents__link toc-highlight">file()</a></li><li><a href="#from" class="table-of-contents__link toc-highlight">from()</a></li><li><a href="#id" class="table-of-contents__link toc-highlight">id()</a></li><li><a href="#imageref" class="table-of-contents__link toc-highlight">imageRef()</a></li><li><a href="#import_" class="table-of-contents__link toc-highlight">import_()</a></li><li><a href="#label" class="table-of-contents__link toc-highlight">label()</a></li><li><a href="#labels" class="table-of-contents__link toc-highlight">labels()</a></li><li><a href="#mounts" class="table-of-contents__link toc-highlight">mounts()</a></li><li><a href="#platform" class="table-of-contents__link toc-highlight">platform()</a></li><li><a href="#publish" class="table-of-contents__link toc-highlight">publish()</a></li><li><a href="#rootfs" class="table-of-contents__link toc-highlight">rootfs()</a></li><li><a href="#stat" class="table-of-contents__link toc-highlight">stat()</a></li><li><a href="#stderr" class="table-of-contents__link toc-highlight">stderr()</a></li><li><a href="#stdout" class="table-of-contents__link toc-highlight">stdout()</a></li><li><a href="#sync" class="table-of-contents__link toc-highlight">sync()</a></li><li><a href="#terminal" class="table-of-contents__link toc-highlight">terminal()</a></li><li><a href="#up" class="table-of-contents__link toc-highlight">up()</a></li><li><a href="#user" class="table-of-contents__link toc-highlight">user()</a></li><li><a href="#with" class="table-of-contents__link toc-highlight">with()</a></li><li><a href="#withannotation" class="table-of-contents__link toc-highlight">withAnnotation()</a></li><li><a href="#withdefaultargs" class="table-of-contents__link toc-highlight">withDefaultArgs()</a></li><li><a href="#withdefaultterminalcmd" class="table-of-contents__link toc-highlight">withDefaultTerminalCmd()</a></li><li><a href="#withdirectory" class="table-of-contents__link toc-highlight">withDirectory()</a></li><li><a href="#withdockerhealthcheck" class="table-of-contents__link toc-highlight">withDockerHealthcheck()</a></li><li><a href="#withentrypoint" class="table-of-contents__link toc-highlight">withEntrypoint()</a></li><li><a href="#withenvfilevariables" class="table-of-contents__link toc-highlight">withEnvFileVariables()</a></li><li><a href="#withenvvariable" class="table-of-contents__link toc-highlight">withEnvVariable()</a></li><li><a href="#witherror" class="table-of-contents__link toc-highlight">withError()</a></li><li><a href="#withexec" class="table-of-contents__link toc-highlight">withExec()</a></li><li><a href="#withexposedport" class="table-of-contents__link toc-highlight">withExposedPort()</a></li><li><a href="#withfile" class="table-of-contents__link toc-highlight">withFile()</a></li><li><a href="#withfiles" class="table-of-contents__link toc-highlight">withFiles()</a></li><li><a href="#withlabel" class="table-of-contents__link toc-highlight">withLabel()</a></li><li><a href="#withmountedcache" class="table-of-contents__link toc-highlight">withMountedCache()</a></li><li><a href="#withmounteddirectory" class="table-of-contents__link toc-highlight">withMountedDirectory()</a></li><li><a href="#withmountedfile" class="table-of-contents__link toc-highlight">withMountedFile()</a></li><li><a href="#withmountedsecret" class="table-of-contents__link toc-highlight">withMountedSecret()</a></li><li><a href="#withmountedtemp" class="table-of-contents__link toc-highlight">withMountedTemp()</a></li><li><a href="#withnewfile" class="table-of-contents__link toc-highlight">withNewFile()</a></li><li><a href="#withoutannotation" class="table-of-contents__link toc-highlight">withoutAnnotation()</a></li><li><a href="#withoutdefaultargs" class="table-of-contents__link toc-highlight">withoutDefaultArgs()</a></li><li><a href="#withoutdirectory" class="table-of-contents__link toc-highlight">withoutDirectory()</a></li><li><a href="#withoutdockerhealthcheck" class="table-of-contents__link toc-highlight">withoutDockerHealthcheck()</a></li><li><a href="#withoutentrypoint" class="table-of-contents__link toc-highlight">withoutEntrypoint()</a></li><li><a href="#withoutenvvariable" class="table-of-contents__link toc-highlight">withoutEnvVariable()</a></li><li><a href="#withoutexposedport" class="table-of-contents__link toc-highlight">withoutExposedPort()</a></li><li><a href="#withoutfile" class="table-of-contents__link toc-highlight">withoutFile()</a></li><li><a href="#withoutfiles" class="table-of-contents__link toc-highlight">withoutFiles()</a></li><li><a href="#withoutlabel" class="table-of-contents__link toc-highlight">withoutLabel()</a></li><li><a href="#withoutmount" class="table-of-contents__link toc-highlight">withoutMount()</a></li><li><a href="#withoutregistryauth" class="table-of-contents__link toc-highlight">withoutRegistryAuth()</a></li><li><a href="#withoutsecretvariable" class="table-of-contents__link toc-highlight">withoutSecretVariable()</a></li><li><a href="#withoutunixsocket" class="table-of-contents__link toc-highlight">withoutUnixSocket()</a></li><li><a href="#withoutuser" class="table-of-contents__link toc-highlight">withoutUser()</a></li><li><a href="#withoutworkdir" class="table-of-contents__link toc-highlight">withoutWorkdir()</a></li><li><a href="#withregistryauth" class="table-of-contents__link toc-highlight">withRegistryAuth()</a></li><li><a href="#withrootfs" class="table-of-contents__link toc-highlight">withRootfs()</a></li><li><a href="#withsecretvariable" class="table-of-contents__link toc-highlight">withSecretVariable()</a></li><li><a href="#withservicebinding" class="table-of-contents__link toc-highlight">withServiceBinding()</a></li><li><a href="#withsymlink" class="table-of-contents__link toc-highlight">withSymlink()</a></li><li><a href="#withunixsocket" class="table-of-contents__link toc-highlight">withUnixSocket()</a></li><li><a href="#withuser" class="table-of-contents__link toc-highlight">withUser()</a></li><li><a href="#withworkdir" class="table-of-contents__link toc-highlight">withWorkdir()</a></li><li><a href="#workdir" class="table-of-contents__link toc-highlight">workdir()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <hr>
+        <div class="flex justify-between">
+          <small>© Dagger 2022-2025</small>
+          <div class="flex gap-8">
+              <a target="_blank" class="footer-discord-link" href="https://discord.gg/dagger-io">
+              </a>
+              <a target="_blank" class="footer-x-link" href="https://twitter.com/dagger_io">
+              </a>
+          </div>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>

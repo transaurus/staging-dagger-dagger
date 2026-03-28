@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-reference/typescript/api/client.gen/classes/Client" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">TypeScript SDK Reference | Dagger</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Client"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="image" property="og:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="author" content="Dagger"><meta data-rh="true" property="twitter:image" content="https://docs.dagger.io/img/daggernaut-carpenter-robots-share.jpg"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TypeScript SDK Reference | Dagger"><meta data-rh="true" name="description" content="The root of the DAG."><meta data-rh="true" property="og:description" content="The root of the DAG."><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Client"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Client" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/zh-Hans/reference/typescript/api/client.gen/classes/Client" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.dagger.io/reference/typescript/api/client.gen/classes/Client" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XEIYPBWGOI-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Dagger" href="/zh-Hans/opensearch.xml">
+
+
+
+
+<link rel="preconnect" href="https://us.i.posthog.com">
+<script>!function(t,e){var o,r,s,a;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,n,p){function c(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(s=t.createElement("script")).type="text/javascript",s.async=!0,s.src=n.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(a=t.getElementsByTagName("script")[0]).parentNode.insertBefore(s,a);var g=e;for(void 0!==p?g=e[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(t){var e="posthog";return"posthog"!==p&&(e+="."+p),t||(e+=" (stub)"),e},g.people.toString=function(){return g.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),r=0;r<o.length;r++)c(g,o[r]);e._i.push([i,n,p])},e.__SV=1)}(document,window.posthog||[]),posthog.init("phc_rykA1oJnBnxTwavpgJKr4RAVXEgCkpyPVi21vQ7906d",{api_host:"https://us.i.posthog.com",id:"default"})</script>
+
+
+<script src="/js/commonroom.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.4801b2b3.css">
+<script src="/zh-Hans/assets/js/runtime~main.0768de0e.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.3687282e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-black.png"><link rel="preload" as="image" href="/zh-Hans/img/dagger-logo-white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#131126;color:#ffffff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">We've launched a brand-new docs site! 🎉 Still want the previous one? You can <a href="https://archive.docs.dagger.io/0.18/">find it in our archive</a>.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a href="https://dagger.io/" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/zh-Hans/img/dagger-logo-black.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40px"><img src="/zh-Hans/img/dagger-logo-white.png" alt="Dagger Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40px"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://dagger.io/cloud" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-blog-link dagger-cloud-button" id="dagger-cloud-link">Try Dagger Cloud</a><div class="header-searchbar navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR" style="color:var(--ifm-color-primary-light)"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/use-cases"><span title="Use Cases" class="linkLabel_WmDU">Use Cases</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/faq"><span title="FAQ" class="linkLabel_WmDU">FAQ</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/zh-Hans/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/core-concepts"><span title="Core Concepts" class="categoryLinkLabel_W154">Core Concepts</span></a><button aria-label="Collapse sidebar category &#x27;Core Concepts&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/toolchains"><span title="Toolchains" class="linkLabel_WmDU">Toolchains</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/checks"><span title="Checks" class="linkLabel_WmDU">Checks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/core-concepts/functions"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/quickstarts/basics"><span title="Quickstarts" class="categoryLinkLabel_W154">Quickstarts</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/types"><span title="Core Types" class="categoryLinkLabel_W154">Core Types</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/getting-started/concepts"><span title="Using Dagger" class="categoryLinkLabel_W154">Using Dagger</span></a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/features"><span title="Features" class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/extending"><span title="Building with Dagger" class="categoryLinkLabel_W154">Building with Dagger</span></a><button aria-label="Expand sidebar category &#x27;Building with Dagger&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/cookbook"><span title="Cookbook" class="linkLabel_WmDU">Cookbook</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/reference/"><span title="Reference" class="categoryLinkLabel_W154">Reference</span></a><button aria-label="Expand sidebar category &#x27;Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Class: Client</h1></header>
+<p>The root of the DAG.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extends">Extends<a href="#extends" class="hash-link" aria-label="Direct link to Extends" title="Direct link to Extends" translate="no">​</a></h2>
+<ul>
+<li class=""><code>BaseClient</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructors">Constructors<a href="#constructors" class="hash-link" aria-label="Direct link to Constructors" title="Direct link to Constructors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="constructor">Constructor<a href="#constructor" class="hash-link" aria-label="Direct link to Constructor" title="Direct link to Constructor" translate="no">​</a></h3>
+<blockquote>
+<p><strong>new Client</strong>(<code>ctx?</code>, <code>_defaultPlatform?</code>, <code>_version?</code>): <code>Client</code></p>
+</blockquote>
+<p>Constructor is used for internal usage only, do not create object from it.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="ctx">ctx?<a href="#ctx" class="hash-link" aria-label="Direct link to ctx?" title="Direct link to ctx?" translate="no">​</a></h5>
+<p><code>Context</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_defaultplatform">_defaultPlatform?<a href="#_defaultplatform" class="hash-link" aria-label="Direct link to _defaultPlatform?" title="Direct link to _defaultPlatform?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="_version">_version?<a href="#_version" class="hash-link" aria-label="Direct link to _version?" title="Direct link to _version?" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns">Returns<a href="#returns" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Client</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="overrides">Overrides<a href="#overrides" class="hash-link" aria-label="Direct link to Overrides" title="Direct link to Overrides" translate="no">​</a></h4>
+<p><code>BaseClient.constructor</code></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="address">address()<a href="#address" class="hash-link" aria-label="Direct link to address()" title="Direct link to address()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>address</strong>(<code>value</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Address"><code>Address</code></a></p>
+</blockquote>
+<p>initialize an address to load directories, containers, secrets or other object types.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="value">value<a href="#value" class="hash-link" aria-label="Direct link to value" title="Direct link to value" translate="no">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Address"><code>Address</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cachevolume">cacheVolume()<a href="#cachevolume" class="hash-link" aria-label="Direct link to cacheVolume()" title="Direct link to cacheVolume()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>cacheVolume</strong>(<code>key</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+</blockquote>
+<p>Constructs a cache volume for a given cache key.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="key">key<a href="#key" class="hash-link" aria-label="Direct link to key" title="Direct link to key" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A string identifier to target this cache volume (e.g., &quot;modules-cache&quot;).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changeset">changeset()<a href="#changeset" class="hash-link" aria-label="Direct link to changeset()" title="Direct link to changeset()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>changeset</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+</blockquote>
+<p>Creates an empty changeset</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud">cloud()<a href="#cloud" class="hash-link" aria-label="Direct link to cloud()" title="Direct link to cloud()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>cloud</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Cloud"><code>Cloud</code></a></p>
+</blockquote>
+<p>Dagger Cloud configuration and state</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Cloud"><code>Cloud</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="container">container()<a href="#container" class="hash-link" aria-label="Direct link to container()" title="Direct link to container()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>container</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Container"><code>Container</code></a></p>
+</blockquote>
+<p>Creates a scratch container, with no image or metadata.</p>
+<p>To pull an image, follow up with the &quot;from&quot; function.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts">opts?<a href="#opts" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientContainerOpts"><code>ClientContainerOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Container"><code>Container</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="currentenv">currentEnv()<a href="#currentenv" class="hash-link" aria-label="Direct link to currentEnv()" title="Direct link to currentEnv()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>currentEnv</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Returns the current environment</p>
+<p>When called from a function invoked via an LLM tool call, this will be the LLM&#x27;s current environment, including any modifications made through calling tools. Env values returned by functions become the new environment for subsequent calls, and Changeset values returned by functions are applied to the environment&#x27;s workspace.</p>
+<p>When called from a module function outside of an LLM, this returns an Env with the current module installed, and with the current module&#x27;s source directory as its workspace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="currentfunctioncall">currentFunctionCall()<a href="#currentfunctioncall" class="hash-link" aria-label="Direct link to currentFunctionCall()" title="Direct link to currentFunctionCall()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>currentFunctionCall</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCall"><code>FunctionCall</code></a></p>
+</blockquote>
+<p>The FunctionCall context that the SDK caller is currently executing in.</p>
+<p>If the caller is not currently executing in a function, this will return an error.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCall"><code>FunctionCall</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="currentmodule">currentModule()<a href="#currentmodule" class="hash-link" aria-label="Direct link to currentModule()" title="Direct link to currentModule()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>currentModule</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CurrentModule"><code>CurrentModule</code></a></p>
+</blockquote>
+<p>The module currently being served in the session, if any.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CurrentModule"><code>CurrentModule</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="currenttypedefs">currentTypeDefs()<a href="#currenttypedefs" class="hash-link" aria-label="Direct link to currentTypeDefs()" title="Direct link to currentTypeDefs()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>currentTypeDefs</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a>[]&gt;</p>
+</blockquote>
+<p>The TypeDef representations of the objects currently being served in the session.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a>[]&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="currentworkspace">currentWorkspace()<a href="#currentworkspace" class="hash-link" aria-label="Direct link to currentWorkspace()" title="Direct link to currentWorkspace()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>currentWorkspace</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Workspace"><code>Workspace</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Detect and return the current workspace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-1">opts?<a href="#opts-1" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientCurrentWorkspaceOpts"><code>ClientCurrentWorkspaceOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Workspace"><code>Workspace</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultplatform">defaultPlatform()<a href="#defaultplatform" class="hash-link" aria-label="Direct link to defaultPlatform()" title="Direct link to defaultPlatform()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>defaultPlatform</strong>(): <code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a>&gt;</p>
+</blockquote>
+<p>The default platform of the engine.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/Platform"><code>Platform</code></a>&gt;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="directory">directory()<a href="#directory" class="hash-link" aria-label="Direct link to directory()" title="Direct link to directory()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>directory</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>Creates an empty directory.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="engine">engine()<a href="#engine" class="hash-link" aria-label="Direct link to engine()" title="Direct link to engine()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>engine</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Engine"><code>Engine</code></a></p>
+</blockquote>
+<p>The Dagger engine container configuration and state</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Engine"><code>Engine</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="env">env()<a href="#env" class="hash-link" aria-label="Direct link to env()" title="Direct link to env()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>env</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Initializes a new environment</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-2">opts?<a href="#opts-2" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientEnvOpts"><code>ClientEnvOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="envfile">envFile()<a href="#envfile" class="hash-link" aria-label="Direct link to envFile()" title="Direct link to envFile()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>envFile</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+</blockquote>
+<p>Initialize an environment file</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-3">opts?<a href="#opts-3" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientEnvFileOpts"><code>ClientEnvFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-15">Returns<a href="#returns-15" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="error">error()<a href="#error" class="hash-link" aria-label="Direct link to error()" title="Direct link to error()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>error</strong>(<code>message</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Error"><code>Error</code></a></p>
+</blockquote>
+<p>Create a new error.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="message">message<a href="#message" class="hash-link" aria-label="Direct link to message" title="Direct link to message" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>A brief description of the error.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-16">Returns<a href="#returns-16" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Error"><code>Error</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="file">file()<a href="#file" class="hash-link" aria-label="Direct link to file()" title="Direct link to file()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>file</strong>(<code>name</code>, <code>contents</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>Creates a file with the specified contents.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name">name<a href="#name" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Name of the new file. Example: &quot;foo.txt&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="contents">contents<a href="#contents" class="hash-link" aria-label="Direct link to contents" title="Direct link to contents" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Contents of the new file. Example: &quot;Hello world!&quot;</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-4">opts?<a href="#opts-4" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientFileOpts"><code>ClientFileOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-17">Returns<a href="#returns-17" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="function_">function_()<a href="#function_" class="hash-link" aria-label="Direct link to function_()" title="Direct link to function_()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>function_</strong>(<code>name</code>, <code>returnType</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Function"><code>Function_</code></a></p>
+</blockquote>
+<p>Creates a function.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-1">name<a href="#name-1" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>Name of the function, in its original format from the implementation language.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="returntype">returnType<a href="#returntype" class="hash-link" aria-label="Direct link to returnType" title="Direct link to returnType" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a></p>
+<p>Return type of the function.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-18">Returns<a href="#returns-18" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Function"><code>Function_</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="generatedcode">generatedCode()<a href="#generatedcode" class="hash-link" aria-label="Direct link to generatedCode()" title="Direct link to generatedCode()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>generatedCode</strong>(<code>code</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratedCode"><code>GeneratedCode</code></a></p>
+</blockquote>
+<p>Create a code generation result, given a directory containing the generated code.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="code">code<a href="#code" class="hash-link" aria-label="Direct link to code" title="Direct link to code" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-19">Returns<a href="#returns-19" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratedCode"><code>GeneratedCode</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getgqlclient">getGQLClient()<a href="#getgqlclient" class="hash-link" aria-label="Direct link to getGQLClient()" title="Direct link to getGQLClient()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>getGQLClient</strong>(): <code>GraphQLClient</code></p>
+</blockquote>
+<p>Get the Raw GraphQL client.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-20">Returns<a href="#returns-20" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>GraphQLClient</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="git">git()<a href="#git" class="hash-link" aria-label="Direct link to git()" title="Direct link to git()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>git</strong>(<code>url</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRepository"><code>GitRepository</code></a></p>
+</blockquote>
+<p>Queries a Git repository.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-11">Parameters<a href="#parameters-11" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="url">url<a href="#url" class="hash-link" aria-label="Direct link to url" title="Direct link to url" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>URL of the git repository.</p>
+<p>Can be formatted as <code>https://{host}/{owner}/{repo}</code>, <code>git@{host}:{owner}/{repo}</code>.</p>
+<p>Suffix &quot;.git&quot; is optional.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-5">opts?<a href="#opts-5" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientGitOpts"><code>ClientGitOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-21">Returns<a href="#returns-21" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRepository"><code>GitRepository</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="host">host()<a href="#host" class="hash-link" aria-label="Direct link to host()" title="Direct link to host()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>host</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Host"><code>Host</code></a></p>
+</blockquote>
+<p>Queries the host environment.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Host"><code>Host</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="http">http()<a href="#http" class="hash-link" aria-label="Direct link to http()" title="Direct link to http()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>http</strong>(<code>url</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>Returns a file containing an http remote url content.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-12">Parameters<a href="#parameters-12" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="url-1">url<a href="#url-1" class="hash-link" aria-label="Direct link to url" title="Direct link to url" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>HTTP url to get the content from (e.g., &quot;<a href="https://docs.dagger.io" target="_blank" rel="noopener noreferrer" class="">https://docs.dagger.io</a>&quot;).</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-6">opts?<a href="#opts-6" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientHttpOpts"><code>ClientHttpOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-23">Returns<a href="#returns-23" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="json">json()<a href="#json" class="hash-link" aria-label="Direct link to json()" title="Direct link to json()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>json</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/JSONValue"><code>JSONValue</code></a></p>
+</blockquote>
+<p>Initialize a JSON value</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-24">Returns<a href="#returns-24" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/JSONValue"><code>JSONValue</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="llm">llm()<a href="#llm" class="hash-link" aria-label="Direct link to llm()" title="Direct link to llm()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>llm</strong>(<code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLM"><code>LLM</code></a></p>
+</blockquote>
+<p><strong><code>Experimental</code></strong></p>
+<p>Initialize a Large Language Model (LLM)</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-13">Parameters<a href="#parameters-13" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-7">opts?<a href="#opts-7" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientLlmOpts"><code>ClientLlmOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLM"><code>LLM</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadaddressfromid">loadAddressFromID()<a href="#loadaddressfromid" class="hash-link" aria-label="Direct link to loadAddressFromID()" title="Direct link to loadAddressFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadAddressFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Address"><code>Address</code></a></p>
+</blockquote>
+<p>Load a Address from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-14">Parameters<a href="#parameters-14" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id<a href="#id" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/AddressID"><code>AddressID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-26">Returns<a href="#returns-26" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Address"><code>Address</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadbindingfromid">loadBindingFromID()<a href="#loadbindingfromid" class="hash-link" aria-label="Direct link to loadBindingFromID()" title="Direct link to loadBindingFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadBindingFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+</blockquote>
+<p>Load a Binding from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-15">Parameters<a href="#parameters-15" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-1">id<a href="#id-1" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/BindingID"><code>BindingID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-27">Returns<a href="#returns-27" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Binding"><code>Binding</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcachevolumefromid">loadCacheVolumeFromID()<a href="#loadcachevolumefromid" class="hash-link" aria-label="Direct link to loadCacheVolumeFromID()" title="Direct link to loadCacheVolumeFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadCacheVolumeFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+</blockquote>
+<p>Load a CacheVolume from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-16">Parameters<a href="#parameters-16" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-2">id<a href="#id-2" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/CacheVolumeID"><code>CacheVolumeID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-28">Returns<a href="#returns-28" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CacheVolume"><code>CacheVolume</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadchangesetfromid">loadChangesetFromID()<a href="#loadchangesetfromid" class="hash-link" aria-label="Direct link to loadChangesetFromID()" title="Direct link to loadChangesetFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadChangesetFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+</blockquote>
+<p>Load a Changeset from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-17">Parameters<a href="#parameters-17" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-3">id<a href="#id-3" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ChangesetID"><code>ChangesetID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-29">Returns<a href="#returns-29" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Changeset"><code>Changeset</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcheckfromid">loadCheckFromID()<a href="#loadcheckfromid" class="hash-link" aria-label="Direct link to loadCheckFromID()" title="Direct link to loadCheckFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadCheckFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Check"><code>Check</code></a></p>
+</blockquote>
+<p>Load a Check from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-18">Parameters<a href="#parameters-18" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-4">id<a href="#id-4" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/CheckID"><code>CheckID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-30">Returns<a href="#returns-30" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Check"><code>Check</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcheckgroupfromid">loadCheckGroupFromID()<a href="#loadcheckgroupfromid" class="hash-link" aria-label="Direct link to loadCheckGroupFromID()" title="Direct link to loadCheckGroupFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadCheckGroupFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CheckGroup"><code>CheckGroup</code></a></p>
+</blockquote>
+<p>Load a CheckGroup from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-5">id<a href="#id-5" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/CheckGroupID"><code>CheckGroupID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-31">Returns<a href="#returns-31" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CheckGroup"><code>CheckGroup</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcloudfromid">loadCloudFromID()<a href="#loadcloudfromid" class="hash-link" aria-label="Direct link to loadCloudFromID()" title="Direct link to loadCloudFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadCloudFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Cloud"><code>Cloud</code></a></p>
+</blockquote>
+<p>Load a Cloud from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-20">Parameters<a href="#parameters-20" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-6">id<a href="#id-6" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/CloudID"><code>CloudID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-32">Returns<a href="#returns-32" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Cloud"><code>Cloud</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcontainerfromid">loadContainerFromID()<a href="#loadcontainerfromid" class="hash-link" aria-label="Direct link to loadContainerFromID()" title="Direct link to loadContainerFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadContainerFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Container"><code>Container</code></a></p>
+</blockquote>
+<p>Load a Container from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-21">Parameters<a href="#parameters-21" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-7">id<a href="#id-7" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ContainerID"><code>ContainerID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-33">Returns<a href="#returns-33" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Container"><code>Container</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadcurrentmodulefromid">loadCurrentModuleFromID()<a href="#loadcurrentmodulefromid" class="hash-link" aria-label="Direct link to loadCurrentModuleFromID()" title="Direct link to loadCurrentModuleFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadCurrentModuleFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CurrentModule"><code>CurrentModule</code></a></p>
+</blockquote>
+<p>Load a CurrentModule from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-22">Parameters<a href="#parameters-22" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-8">id<a href="#id-8" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/CurrentModuleID"><code>CurrentModuleID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-34">Returns<a href="#returns-34" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/CurrentModule"><code>CurrentModule</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loaddirectoryfromid">loadDirectoryFromID()<a href="#loaddirectoryfromid" class="hash-link" aria-label="Direct link to loadDirectoryFromID()" title="Direct link to loadDirectoryFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadDirectoryFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+</blockquote>
+<p>Load a Directory from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-23">Parameters<a href="#parameters-23" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-9">id<a href="#id-9" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/DirectoryID"><code>DirectoryID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-35">Returns<a href="#returns-35" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Directory"><code>Directory</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenginecacheentryfromid">loadEngineCacheEntryFromID()<a href="#loadenginecacheentryfromid" class="hash-link" aria-label="Direct link to loadEngineCacheEntryFromID()" title="Direct link to loadEngineCacheEntryFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEngineCacheEntryFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCacheEntry"><code>EngineCacheEntry</code></a></p>
+</blockquote>
+<p>Load a EngineCacheEntry from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-24">Parameters<a href="#parameters-24" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-10">id<a href="#id-10" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EngineCacheEntryID"><code>EngineCacheEntryID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-36">Returns<a href="#returns-36" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCacheEntry"><code>EngineCacheEntry</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenginecacheentrysetfromid">loadEngineCacheEntrySetFromID()<a href="#loadenginecacheentrysetfromid" class="hash-link" aria-label="Direct link to loadEngineCacheEntrySetFromID()" title="Direct link to loadEngineCacheEntrySetFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEngineCacheEntrySetFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCacheEntrySet"><code>EngineCacheEntrySet</code></a></p>
+</blockquote>
+<p>Load a EngineCacheEntrySet from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-25">Parameters<a href="#parameters-25" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-11">id<a href="#id-11" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EngineCacheEntrySetID"><code>EngineCacheEntrySetID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-37">Returns<a href="#returns-37" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCacheEntrySet"><code>EngineCacheEntrySet</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenginecachefromid">loadEngineCacheFromID()<a href="#loadenginecachefromid" class="hash-link" aria-label="Direct link to loadEngineCacheFromID()" title="Direct link to loadEngineCacheFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEngineCacheFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCache"><code>EngineCache</code></a></p>
+</blockquote>
+<p>Load a EngineCache from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-26">Parameters<a href="#parameters-26" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-12">id<a href="#id-12" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EngineCacheID"><code>EngineCacheID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-38">Returns<a href="#returns-38" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EngineCache"><code>EngineCache</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenginefromid">loadEngineFromID()<a href="#loadenginefromid" class="hash-link" aria-label="Direct link to loadEngineFromID()" title="Direct link to loadEngineFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEngineFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Engine"><code>Engine</code></a></p>
+</blockquote>
+<p>Load a Engine from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-27">Parameters<a href="#parameters-27" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-13">id<a href="#id-13" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EngineID"><code>EngineID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-39">Returns<a href="#returns-39" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Engine"><code>Engine</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenumtypedeffromid">loadEnumTypeDefFromID()<a href="#loadenumtypedeffromid" class="hash-link" aria-label="Direct link to loadEnumTypeDefFromID()" title="Direct link to loadEnumTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEnumTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnumTypeDef"><code>EnumTypeDef</code></a></p>
+</blockquote>
+<p>Load a EnumTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-28">Parameters<a href="#parameters-28" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-14">id<a href="#id-14" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnumTypeDefID"><code>EnumTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-40">Returns<a href="#returns-40" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnumTypeDef"><code>EnumTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenumvaluetypedeffromid">loadEnumValueTypeDefFromID()<a href="#loadenumvaluetypedeffromid" class="hash-link" aria-label="Direct link to loadEnumValueTypeDefFromID()" title="Direct link to loadEnumValueTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEnumValueTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnumValueTypeDef"><code>EnumValueTypeDef</code></a></p>
+</blockquote>
+<p>Load a EnumValueTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-29">Parameters<a href="#parameters-29" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-15">id<a href="#id-15" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnumValueTypeDefID"><code>EnumValueTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-41">Returns<a href="#returns-41" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnumValueTypeDef"><code>EnumValueTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenvfilefromid">loadEnvFileFromID()<a href="#loadenvfilefromid" class="hash-link" aria-label="Direct link to loadEnvFileFromID()" title="Direct link to loadEnvFileFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEnvFileFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+</blockquote>
+<p>Load a EnvFile from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-30">Parameters<a href="#parameters-30" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-16">id<a href="#id-16" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvFileID"><code>EnvFileID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-42">Returns<a href="#returns-42" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvFile"><code>EnvFile</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenvfromid">loadEnvFromID()<a href="#loadenvfromid" class="hash-link" aria-label="Direct link to loadEnvFromID()" title="Direct link to loadEnvFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEnvFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+</blockquote>
+<p>Load a Env from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-31">Parameters<a href="#parameters-31" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-17">id<a href="#id-17" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvID"><code>EnvID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-43">Returns<a href="#returns-43" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Env"><code>Env</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadenvvariablefromid">loadEnvVariableFromID()<a href="#loadenvvariablefromid" class="hash-link" aria-label="Direct link to loadEnvVariableFromID()" title="Direct link to loadEnvVariableFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadEnvVariableFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvVariable"><code>EnvVariable</code></a></p>
+</blockquote>
+<p>Load a EnvVariable from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-32">Parameters<a href="#parameters-32" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-18">id<a href="#id-18" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/EnvVariableID"><code>EnvVariableID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-44">Returns<a href="#returns-44" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/EnvVariable"><code>EnvVariable</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loaderrorfromid">loadErrorFromID()<a href="#loaderrorfromid" class="hash-link" aria-label="Direct link to loadErrorFromID()" title="Direct link to loadErrorFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadErrorFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Error"><code>Error</code></a></p>
+</blockquote>
+<p>Load a Error from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-33">Parameters<a href="#parameters-33" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-19">id<a href="#id-19" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ErrorID"><code>ErrorID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-45">Returns<a href="#returns-45" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Error"><code>Error</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loaderrorvaluefromid">loadErrorValueFromID()<a href="#loaderrorvaluefromid" class="hash-link" aria-label="Direct link to loadErrorValueFromID()" title="Direct link to loadErrorValueFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadErrorValueFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ErrorValue"><code>ErrorValue</code></a></p>
+</blockquote>
+<p>Load a ErrorValue from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-34">Parameters<a href="#parameters-34" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-20">id<a href="#id-20" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ErrorValueID"><code>ErrorValueID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-46">Returns<a href="#returns-46" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ErrorValue"><code>ErrorValue</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfieldtypedeffromid">loadFieldTypeDefFromID()<a href="#loadfieldtypedeffromid" class="hash-link" aria-label="Direct link to loadFieldTypeDefFromID()" title="Direct link to loadFieldTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFieldTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FieldTypeDef"><code>FieldTypeDef</code></a></p>
+</blockquote>
+<p>Load a FieldTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-35">Parameters<a href="#parameters-35" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-21">id<a href="#id-21" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FieldTypeDefID"><code>FieldTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-47">Returns<a href="#returns-47" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FieldTypeDef"><code>FieldTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfilefromid">loadFileFromID()<a href="#loadfilefromid" class="hash-link" aria-label="Direct link to loadFileFromID()" title="Direct link to loadFileFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFileFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+</blockquote>
+<p>Load a File from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-36">Parameters<a href="#parameters-36" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-22">id<a href="#id-22" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FileID"><code>FileID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-48">Returns<a href="#returns-48" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/File"><code>File</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfunctionargfromid">loadFunctionArgFromID()<a href="#loadfunctionargfromid" class="hash-link" aria-label="Direct link to loadFunctionArgFromID()" title="Direct link to loadFunctionArgFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFunctionArgFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionArg"><code>FunctionArg</code></a></p>
+</blockquote>
+<p>Load a FunctionArg from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-37">Parameters<a href="#parameters-37" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-23">id<a href="#id-23" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FunctionArgID"><code>FunctionArgID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-49">Returns<a href="#returns-49" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionArg"><code>FunctionArg</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfunctioncallargvaluefromid">loadFunctionCallArgValueFromID()<a href="#loadfunctioncallargvaluefromid" class="hash-link" aria-label="Direct link to loadFunctionCallArgValueFromID()" title="Direct link to loadFunctionCallArgValueFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFunctionCallArgValueFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCallArgValue"><code>FunctionCallArgValue</code></a></p>
+</blockquote>
+<p>Load a FunctionCallArgValue from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-38">Parameters<a href="#parameters-38" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-24">id<a href="#id-24" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FunctionCallArgValueID"><code>FunctionCallArgValueID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-50">Returns<a href="#returns-50" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCallArgValue"><code>FunctionCallArgValue</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfunctioncallfromid">loadFunctionCallFromID()<a href="#loadfunctioncallfromid" class="hash-link" aria-label="Direct link to loadFunctionCallFromID()" title="Direct link to loadFunctionCallFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFunctionCallFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCall"><code>FunctionCall</code></a></p>
+</blockquote>
+<p>Load a FunctionCall from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-39">Parameters<a href="#parameters-39" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-25">id<a href="#id-25" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FunctionCallID"><code>FunctionCallID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-51">Returns<a href="#returns-51" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/FunctionCall"><code>FunctionCall</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadfunctionfromid">loadFunctionFromID()<a href="#loadfunctionfromid" class="hash-link" aria-label="Direct link to loadFunctionFromID()" title="Direct link to loadFunctionFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadFunctionFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Function"><code>Function_</code></a></p>
+</blockquote>
+<p>Load a Function from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-40">Parameters<a href="#parameters-40" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-26">id<a href="#id-26" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/FunctionID"><code>FunctionID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Function"><code>Function_</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadgeneratedcodefromid">loadGeneratedCodeFromID()<a href="#loadgeneratedcodefromid" class="hash-link" aria-label="Direct link to loadGeneratedCodeFromID()" title="Direct link to loadGeneratedCodeFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadGeneratedCodeFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratedCode"><code>GeneratedCode</code></a></p>
+</blockquote>
+<p>Load a GeneratedCode from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-41">Parameters<a href="#parameters-41" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-27">id<a href="#id-27" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/GeneratedCodeID"><code>GeneratedCodeID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-53">Returns<a href="#returns-53" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratedCode"><code>GeneratedCode</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadgeneratorfromid">loadGeneratorFromID()<a href="#loadgeneratorfromid" class="hash-link" aria-label="Direct link to loadGeneratorFromID()" title="Direct link to loadGeneratorFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadGeneratorFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Generator"><code>Generator</code></a></p>
+</blockquote>
+<p>Load a Generator from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-42">Parameters<a href="#parameters-42" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-28">id<a href="#id-28" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/GeneratorID"><code>GeneratorID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-54">Returns<a href="#returns-54" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Generator"><code>Generator</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadgeneratorgroupfromid">loadGeneratorGroupFromID()<a href="#loadgeneratorgroupfromid" class="hash-link" aria-label="Direct link to loadGeneratorGroupFromID()" title="Direct link to loadGeneratorGroupFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadGeneratorGroupFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratorGroup"><code>GeneratorGroup</code></a></p>
+</blockquote>
+<p>Load a GeneratorGroup from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-43">Parameters<a href="#parameters-43" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-29">id<a href="#id-29" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/GeneratorGroupID"><code>GeneratorGroupID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-55">Returns<a href="#returns-55" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GeneratorGroup"><code>GeneratorGroup</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadgitreffromid">loadGitRefFromID()<a href="#loadgitreffromid" class="hash-link" aria-label="Direct link to loadGitRefFromID()" title="Direct link to loadGitRefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadGitRefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRef"><code>GitRef</code></a></p>
+</blockquote>
+<p>Load a GitRef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-44">Parameters<a href="#parameters-44" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-30">id<a href="#id-30" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/GitRefID"><code>GitRefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-56">Returns<a href="#returns-56" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRef"><code>GitRef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadgitrepositoryfromid">loadGitRepositoryFromID()<a href="#loadgitrepositoryfromid" class="hash-link" aria-label="Direct link to loadGitRepositoryFromID()" title="Direct link to loadGitRepositoryFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadGitRepositoryFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRepository"><code>GitRepository</code></a></p>
+</blockquote>
+<p>Load a GitRepository from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-45">Parameters<a href="#parameters-45" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-31">id<a href="#id-31" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/GitRepositoryID"><code>GitRepositoryID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-57">Returns<a href="#returns-57" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/GitRepository"><code>GitRepository</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadhealthcheckconfigfromid">loadHealthcheckConfigFromID()<a href="#loadhealthcheckconfigfromid" class="hash-link" aria-label="Direct link to loadHealthcheckConfigFromID()" title="Direct link to loadHealthcheckConfigFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadHealthcheckConfigFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/HealthcheckConfig"><code>HealthcheckConfig</code></a></p>
+</blockquote>
+<p>Load a HealthcheckConfig from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-46">Parameters<a href="#parameters-46" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-32">id<a href="#id-32" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/HealthcheckConfigID"><code>HealthcheckConfigID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-58">Returns<a href="#returns-58" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/HealthcheckConfig"><code>HealthcheckConfig</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadhostfromid">loadHostFromID()<a href="#loadhostfromid" class="hash-link" aria-label="Direct link to loadHostFromID()" title="Direct link to loadHostFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadHostFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Host"><code>Host</code></a></p>
+</blockquote>
+<p>Load a Host from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-47">Parameters<a href="#parameters-47" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-33">id<a href="#id-33" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/HostID"><code>HostID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-59">Returns<a href="#returns-59" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Host"><code>Host</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadinputtypedeffromid">loadInputTypeDefFromID()<a href="#loadinputtypedeffromid" class="hash-link" aria-label="Direct link to loadInputTypeDefFromID()" title="Direct link to loadInputTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadInputTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/InputTypeDef"><code>InputTypeDef</code></a></p>
+</blockquote>
+<p>Load a InputTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-48">Parameters<a href="#parameters-48" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-34">id<a href="#id-34" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/InputTypeDefID"><code>InputTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-60">Returns<a href="#returns-60" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/InputTypeDef"><code>InputTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadinterfacetypedeffromid">loadInterfaceTypeDefFromID()<a href="#loadinterfacetypedeffromid" class="hash-link" aria-label="Direct link to loadInterfaceTypeDefFromID()" title="Direct link to loadInterfaceTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadInterfaceTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/InterfaceTypeDef"><code>InterfaceTypeDef</code></a></p>
+</blockquote>
+<p>Load a InterfaceTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-49">Parameters<a href="#parameters-49" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-35">id<a href="#id-35" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/InterfaceTypeDefID"><code>InterfaceTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-61">Returns<a href="#returns-61" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/InterfaceTypeDef"><code>InterfaceTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadjsonvaluefromid">loadJSONValueFromID()<a href="#loadjsonvaluefromid" class="hash-link" aria-label="Direct link to loadJSONValueFromID()" title="Direct link to loadJSONValueFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadJSONValueFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/JSONValue"><code>JSONValue</code></a></p>
+</blockquote>
+<p>Load a JSONValue from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-50">Parameters<a href="#parameters-50" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-36">id<a href="#id-36" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/JSONValueID"><code>JSONValueID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-62">Returns<a href="#returns-62" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/JSONValue"><code>JSONValue</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadlabelfromid">loadLabelFromID()<a href="#loadlabelfromid" class="hash-link" aria-label="Direct link to loadLabelFromID()" title="Direct link to loadLabelFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadLabelFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Label"><code>Label</code></a></p>
+</blockquote>
+<p>Load a Label from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-51">Parameters<a href="#parameters-51" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-37">id<a href="#id-37" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/LabelID"><code>LabelID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-63">Returns<a href="#returns-63" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Label"><code>Label</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadlisttypedeffromid">loadListTypeDefFromID()<a href="#loadlisttypedeffromid" class="hash-link" aria-label="Direct link to loadListTypeDefFromID()" title="Direct link to loadListTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadListTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ListTypeDef"><code>ListTypeDef</code></a></p>
+</blockquote>
+<p>Load a ListTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-52">Parameters<a href="#parameters-52" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-38">id<a href="#id-38" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ListTypeDefID"><code>ListTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-64">Returns<a href="#returns-64" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ListTypeDef"><code>ListTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadllmfromid">loadLLMFromID()<a href="#loadllmfromid" class="hash-link" aria-label="Direct link to loadLLMFromID()" title="Direct link to loadLLMFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadLLMFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLM"><code>LLM</code></a></p>
+</blockquote>
+<p>Load a LLM from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-53">Parameters<a href="#parameters-53" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-39">id<a href="#id-39" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/LLMID"><code>LLMID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-65">Returns<a href="#returns-65" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLM"><code>LLM</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadllmtokenusagefromid">loadLLMTokenUsageFromID()<a href="#loadllmtokenusagefromid" class="hash-link" aria-label="Direct link to loadLLMTokenUsageFromID()" title="Direct link to loadLLMTokenUsageFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadLLMTokenUsageFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLMTokenUsage"><code>LLMTokenUsage</code></a></p>
+</blockquote>
+<p>Load a LLMTokenUsage from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-54">Parameters<a href="#parameters-54" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-40">id<a href="#id-40" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/LLMTokenUsageID"><code>LLMTokenUsageID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-66">Returns<a href="#returns-66" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/LLMTokenUsage"><code>LLMTokenUsage</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadmoduleconfigclientfromid">loadModuleConfigClientFromID()<a href="#loadmoduleconfigclientfromid" class="hash-link" aria-label="Direct link to loadModuleConfigClientFromID()" title="Direct link to loadModuleConfigClientFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadModuleConfigClientFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleConfigClient"><code>ModuleConfigClient</code></a></p>
+</blockquote>
+<p>Load a ModuleConfigClient from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-55">Parameters<a href="#parameters-55" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-41">id<a href="#id-41" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ModuleConfigClientID"><code>ModuleConfigClientID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-67">Returns<a href="#returns-67" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleConfigClient"><code>ModuleConfigClient</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadmodulefromid">loadModuleFromID()<a href="#loadmodulefromid" class="hash-link" aria-label="Direct link to loadModuleFromID()" title="Direct link to loadModuleFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadModuleFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+</blockquote>
+<p>Load a Module from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-56">Parameters<a href="#parameters-56" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-42">id<a href="#id-42" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ModuleID"><code>ModuleID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-68">Returns<a href="#returns-68" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadmodulesourcefromid">loadModuleSourceFromID()<a href="#loadmodulesourcefromid" class="hash-link" aria-label="Direct link to loadModuleSourceFromID()" title="Direct link to loadModuleSourceFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadModuleSourceFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleSource"><code>ModuleSource</code></a></p>
+</blockquote>
+<p>Load a ModuleSource from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-57">Parameters<a href="#parameters-57" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-43">id<a href="#id-43" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ModuleSourceID"><code>ModuleSourceID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-69">Returns<a href="#returns-69" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleSource"><code>ModuleSource</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadobjecttypedeffromid">loadObjectTypeDefFromID()<a href="#loadobjecttypedeffromid" class="hash-link" aria-label="Direct link to loadObjectTypeDefFromID()" title="Direct link to loadObjectTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadObjectTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ObjectTypeDef"><code>ObjectTypeDef</code></a></p>
+</blockquote>
+<p>Load a ObjectTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-58">Parameters<a href="#parameters-58" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-44">id<a href="#id-44" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ObjectTypeDefID"><code>ObjectTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-70">Returns<a href="#returns-70" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ObjectTypeDef"><code>ObjectTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadportfromid">loadPortFromID()<a href="#loadportfromid" class="hash-link" aria-label="Direct link to loadPortFromID()" title="Direct link to loadPortFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadPortFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Port"><code>Port</code></a></p>
+</blockquote>
+<p>Load a Port from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-59">Parameters<a href="#parameters-59" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-45">id<a href="#id-45" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/PortID"><code>PortID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-71">Returns<a href="#returns-71" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Port"><code>Port</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadscalartypedeffromid">loadScalarTypeDefFromID()<a href="#loadscalartypedeffromid" class="hash-link" aria-label="Direct link to loadScalarTypeDefFromID()" title="Direct link to loadScalarTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadScalarTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ScalarTypeDef"><code>ScalarTypeDef</code></a></p>
+</blockquote>
+<p>Load a ScalarTypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-60">Parameters<a href="#parameters-60" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-46">id<a href="#id-46" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ScalarTypeDefID"><code>ScalarTypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-72">Returns<a href="#returns-72" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ScalarTypeDef"><code>ScalarTypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsdkconfigfromid">loadSDKConfigFromID()<a href="#loadsdkconfigfromid" class="hash-link" aria-label="Direct link to loadSDKConfigFromID()" title="Direct link to loadSDKConfigFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSDKConfigFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SDKConfig"><code>SDKConfig</code></a></p>
+</blockquote>
+<p>Load a SDKConfig from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-61">Parameters<a href="#parameters-61" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-47">id<a href="#id-47" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SDKConfigID"><code>SDKConfigID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-73">Returns<a href="#returns-73" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SDKConfig"><code>SDKConfig</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsearchresultfromid">loadSearchResultFromID()<a href="#loadsearchresultfromid" class="hash-link" aria-label="Direct link to loadSearchResultFromID()" title="Direct link to loadSearchResultFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSearchResultFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchResult"><code>SearchResult</code></a></p>
+</blockquote>
+<p>Load a SearchResult from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-62">Parameters<a href="#parameters-62" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-48">id<a href="#id-48" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SearchResultID"><code>SearchResultID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-74">Returns<a href="#returns-74" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchResult"><code>SearchResult</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsearchsubmatchfromid">loadSearchSubmatchFromID()<a href="#loadsearchsubmatchfromid" class="hash-link" aria-label="Direct link to loadSearchSubmatchFromID()" title="Direct link to loadSearchSubmatchFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSearchSubmatchFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchSubmatch"><code>SearchSubmatch</code></a></p>
+</blockquote>
+<p>Load a SearchSubmatch from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-63">Parameters<a href="#parameters-63" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-49">id<a href="#id-49" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SearchSubmatchID"><code>SearchSubmatchID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-75">Returns<a href="#returns-75" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SearchSubmatch"><code>SearchSubmatch</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsecretfromid">loadSecretFromID()<a href="#loadsecretfromid" class="hash-link" aria-label="Direct link to loadSecretFromID()" title="Direct link to loadSecretFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSecretFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+</blockquote>
+<p>Load a Secret from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-64">Parameters<a href="#parameters-64" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-50">id<a href="#id-50" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SecretID"><code>SecretID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-76">Returns<a href="#returns-76" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadservicefromid">loadServiceFromID()<a href="#loadservicefromid" class="hash-link" aria-label="Direct link to loadServiceFromID()" title="Direct link to loadServiceFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadServiceFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+</blockquote>
+<p>Load a Service from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-65">Parameters<a href="#parameters-65" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-51">id<a href="#id-51" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ServiceID"><code>ServiceID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-77">Returns<a href="#returns-77" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Service"><code>Service</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsocketfromid">loadSocketFromID()<a href="#loadsocketfromid" class="hash-link" aria-label="Direct link to loadSocketFromID()" title="Direct link to loadSocketFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSocketFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Socket"><code>Socket</code></a></p>
+</blockquote>
+<p>Load a Socket from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-66">Parameters<a href="#parameters-66" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-52">id<a href="#id-52" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SocketID"><code>SocketID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-78">Returns<a href="#returns-78" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Socket"><code>Socket</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadsourcemapfromid">loadSourceMapFromID()<a href="#loadsourcemapfromid" class="hash-link" aria-label="Direct link to loadSourceMapFromID()" title="Direct link to loadSourceMapFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadSourceMapFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SourceMap"><code>SourceMap</code></a></p>
+</blockquote>
+<p>Load a SourceMap from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-67">Parameters<a href="#parameters-67" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-53">id<a href="#id-53" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/SourceMapID"><code>SourceMapID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-79">Returns<a href="#returns-79" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SourceMap"><code>SourceMap</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadstatfromid">loadStatFromID()<a href="#loadstatfromid" class="hash-link" aria-label="Direct link to loadStatFromID()" title="Direct link to loadStatFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadStatFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Stat"><code>Stat</code></a></p>
+</blockquote>
+<p>Load a Stat from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-68">Parameters<a href="#parameters-68" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-54">id<a href="#id-54" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/StatID"><code>StatID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-80">Returns<a href="#returns-80" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Stat"><code>Stat</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadterminalfromid">loadTerminalFromID()<a href="#loadterminalfromid" class="hash-link" aria-label="Direct link to loadTerminalFromID()" title="Direct link to loadTerminalFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadTerminalFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Terminal"><code>Terminal</code></a></p>
+</blockquote>
+<p>Load a Terminal from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-69">Parameters<a href="#parameters-69" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-55">id<a href="#id-55" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/TerminalID"><code>TerminalID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-81">Returns<a href="#returns-81" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Terminal"><code>Terminal</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadtypedeffromid">loadTypeDefFromID()<a href="#loadtypedeffromid" class="hash-link" aria-label="Direct link to loadTypeDefFromID()" title="Direct link to loadTypeDefFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadTypeDefFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a></p>
+</blockquote>
+<p>Load a TypeDef from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-70">Parameters<a href="#parameters-70" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-56">id<a href="#id-56" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/TypeDefID"><code>TypeDefID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-82">Returns<a href="#returns-82" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadworkspacefromid">loadWorkspaceFromID()<a href="#loadworkspacefromid" class="hash-link" aria-label="Direct link to loadWorkspaceFromID()" title="Direct link to loadWorkspaceFromID()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>loadWorkspaceFromID</strong>(<code>id</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Workspace"><code>Workspace</code></a></p>
+</blockquote>
+<p>Load a Workspace from its ID.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-71">Parameters<a href="#parameters-71" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-57">id<a href="#id-57" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/WorkspaceID"><code>WorkspaceID</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-83">Returns<a href="#returns-83" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Workspace"><code>Workspace</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="module_">module_()<a href="#module_" class="hash-link" aria-label="Direct link to module_()" title="Direct link to module_()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>module_</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+</blockquote>
+<p>Create a new module.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-84">Returns<a href="#returns-84" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Module"><code>Module_</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modulesource">moduleSource()<a href="#modulesource" class="hash-link" aria-label="Direct link to moduleSource()" title="Direct link to moduleSource()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>moduleSource</strong>(<code>refString</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleSource"><code>ModuleSource</code></a></p>
+</blockquote>
+<p>Create a new module source instance from a source ref string</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-72">Parameters<a href="#parameters-72" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="refstring">refString<a href="#refstring" class="hash-link" aria-label="Direct link to refString" title="Direct link to refString" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The string ref representation of the module source</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-8">opts?<a href="#opts-8" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientModuleSourceOpts"><code>ClientModuleSourceOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-85">Returns<a href="#returns-85" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/ModuleSource"><code>ModuleSource</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="secret">secret()<a href="#secret" class="hash-link" aria-label="Direct link to secret()" title="Direct link to secret()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>secret</strong>(<code>uri</code>, <code>opts?</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+</blockquote>
+<p>Creates a new secret.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-73">Parameters<a href="#parameters-73" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="uri">uri<a href="#uri" class="hash-link" aria-label="Direct link to uri" title="Direct link to uri" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The URI of the secret store</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="opts-9">opts?<a href="#opts-9" class="hash-link" aria-label="Direct link to opts?" title="Direct link to opts?" translate="no">​</a></h5>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/type-aliases/ClientSecretOpts"><code>ClientSecretOpts</code></a></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-86">Returns<a href="#returns-86" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="setsecret">setSecret()<a href="#setsecret" class="hash-link" aria-label="Direct link to setSecret()" title="Direct link to setSecret()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>setSecret</strong>(<code>name</code>, <code>plaintext</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+</blockquote>
+<p>Sets a secret given a user defined name to its plaintext and returns the secret.</p>
+<p>The plaintext value is limited to a size of 128000 bytes.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-74">Parameters<a href="#parameters-74" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="name-2">name<a href="#name-2" class="hash-link" aria-label="Direct link to name" title="Direct link to name" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The user defined name for this secret</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="plaintext">plaintext<a href="#plaintext" class="hash-link" aria-label="Direct link to plaintext" title="Direct link to plaintext" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The plaintext of the secret</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-87">Returns<a href="#returns-87" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/Secret"><code>Secret</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sourcemap">sourceMap()<a href="#sourcemap" class="hash-link" aria-label="Direct link to sourceMap()" title="Direct link to sourceMap()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>sourceMap</strong>(<code>filename</code>, <code>line</code>, <code>column</code>): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SourceMap"><code>SourceMap</code></a></p>
+</blockquote>
+<p>Creates source map metadata.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters-75">Parameters<a href="#parameters-75" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="filename">filename<a href="#filename" class="hash-link" aria-label="Direct link to filename" title="Direct link to filename" translate="no">​</a></h5>
+<p><code>string</code></p>
+<p>The filename from the module source.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="line">line<a href="#line" class="hash-link" aria-label="Direct link to line" title="Direct link to line" translate="no">​</a></h5>
+<p><code>number</code></p>
+<p>The line number within the filename.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="column">column<a href="#column" class="hash-link" aria-label="Direct link to column" title="Direct link to column" translate="no">​</a></h5>
+<p><code>number</code></p>
+<p>The column number within the line.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-88">Returns<a href="#returns-88" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/SourceMap"><code>SourceMap</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="typedef">typeDef()<a href="#typedef" class="hash-link" aria-label="Direct link to typeDef()" title="Direct link to typeDef()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>typeDef</strong>(): <a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a></p>
+</blockquote>
+<p>Create a new TypeDef.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-89">Returns<a href="#returns-89" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><a class="" href="/zh-Hans/reference/typescript/api/client.gen/classes/TypeDef"><code>TypeDef</code></a></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="version">version()<a href="#version" class="hash-link" aria-label="Direct link to version()" title="Direct link to version()" translate="no">​</a></h3>
+<blockquote>
+<p><strong>version</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Get the current Dagger Engine version.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="returns-90">Returns<a href="#returns-90" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns" translate="no">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/dagger/dagger/edit/main/docs/current_docs/reference/typescript/api/client.gen/classes/Client.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#extends" class="table-of-contents__link toc-highlight">Extends</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#constructor" class="table-of-contents__link toc-highlight">Constructor</a></li></ul></li><li><a href="#methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#address" class="table-of-contents__link toc-highlight">address()</a></li><li><a href="#cachevolume" class="table-of-contents__link toc-highlight">cacheVolume()</a></li><li><a href="#changeset" class="table-of-contents__link toc-highlight">changeset()</a></li><li><a href="#cloud" class="table-of-contents__link toc-highlight">cloud()</a></li><li><a href="#container" class="table-of-contents__link toc-highlight">container()</a></li><li><a href="#currentenv" class="table-of-contents__link toc-highlight">currentEnv()</a></li><li><a href="#currentfunctioncall" class="table-of-contents__link toc-highlight">currentFunctionCall()</a></li><li><a href="#currentmodule" class="table-of-contents__link toc-highlight">currentModule()</a></li><li><a href="#currenttypedefs" class="table-of-contents__link toc-highlight">currentTypeDefs()</a></li><li><a href="#currentworkspace" class="table-of-contents__link toc-highlight">currentWorkspace()</a></li><li><a href="#defaultplatform" class="table-of-contents__link toc-highlight">defaultPlatform()</a></li><li><a href="#directory" class="table-of-contents__link toc-highlight">directory()</a></li><li><a href="#engine" class="table-of-contents__link toc-highlight">engine()</a></li><li><a href="#env" class="table-of-contents__link toc-highlight">env()</a></li><li><a href="#envfile" class="table-of-contents__link toc-highlight">envFile()</a></li><li><a href="#error" class="table-of-contents__link toc-highlight">error()</a></li><li><a href="#file" class="table-of-contents__link toc-highlight">file()</a></li><li><a href="#function_" class="table-of-contents__link toc-highlight">function_()</a></li><li><a href="#generatedcode" class="table-of-contents__link toc-highlight">generatedCode()</a></li><li><a href="#getgqlclient" class="table-of-contents__link toc-highlight">getGQLClient()</a></li><li><a href="#git" class="table-of-contents__link toc-highlight">git()</a></li><li><a href="#host" class="table-of-contents__link toc-highlight">host()</a></li><li><a href="#http" class="table-of-contents__link toc-highlight">http()</a></li><li><a href="#json" class="table-of-contents__link toc-highlight">json()</a></li><li><a href="#llm" class="table-of-contents__link toc-highlight">llm()</a></li><li><a href="#loadaddressfromid" class="table-of-contents__link toc-highlight">loadAddressFromID()</a></li><li><a href="#loadbindingfromid" class="table-of-contents__link toc-highlight">loadBindingFromID()</a></li><li><a href="#loadcachevolumefromid" class="table-of-contents__link toc-highlight">loadCacheVolumeFromID()</a></li><li><a href="#loadchangesetfromid" class="table-of-contents__link toc-highlight">loadChangesetFromID()</a></li><li><a href="#loadcheckfromid" class="table-of-contents__link toc-highlight">loadCheckFromID()</a></li><li><a href="#loadcheckgroupfromid" class="table-of-contents__link toc-highlight">loadCheckGroupFromID()</a></li><li><a href="#loadcloudfromid" class="table-of-contents__link toc-highlight">loadCloudFromID()</a></li><li><a href="#loadcontainerfromid" class="table-of-contents__link toc-highlight">loadContainerFromID()</a></li><li><a href="#loadcurrentmodulefromid" class="table-of-contents__link toc-highlight">loadCurrentModuleFromID()</a></li><li><a href="#loaddirectoryfromid" class="table-of-contents__link toc-highlight">loadDirectoryFromID()</a></li><li><a href="#loadenginecacheentryfromid" class="table-of-contents__link toc-highlight">loadEngineCacheEntryFromID()</a></li><li><a href="#loadenginecacheentrysetfromid" class="table-of-contents__link toc-highlight">loadEngineCacheEntrySetFromID()</a></li><li><a href="#loadenginecachefromid" class="table-of-contents__link toc-highlight">loadEngineCacheFromID()</a></li><li><a href="#loadenginefromid" class="table-of-contents__link toc-highlight">loadEngineFromID()</a></li><li><a href="#loadenumtypedeffromid" class="table-of-contents__link toc-highlight">loadEnumTypeDefFromID()</a></li><li><a href="#loadenumvaluetypedeffromid" class="table-of-contents__link toc-highlight">loadEnumValueTypeDefFromID()</a></li><li><a href="#loadenvfilefromid" class="table-of-contents__link toc-highlight">loadEnvFileFromID()</a></li><li><a href="#loadenvfromid" class="table-of-contents__link toc-highlight">loadEnvFromID()</a></li><li><a href="#loadenvvariablefromid" class="table-of-contents__link toc-highlight">loadEnvVariableFromID()</a></li><li><a href="#loaderrorfromid" class="table-of-contents__link toc-highlight">loadErrorFromID()</a></li><li><a href="#loaderrorvaluefromid" class="table-of-contents__link toc-highlight">loadErrorValueFromID()</a></li><li><a href="#loadfieldtypedeffromid" class="table-of-contents__link toc-highlight">loadFieldTypeDefFromID()</a></li><li><a href="#loadfilefromid" class="table-of-contents__link toc-highlight">loadFileFromID()</a></li><li><a href="#loadfunctionargfromid" class="table-of-contents__link toc-highlight">loadFunctionArgFromID()</a></li><li><a href="#loadfunctioncallargvaluefromid" class="table-of-contents__link toc-highlight">loadFunctionCallArgValueFromID()</a></li><li><a href="#loadfunctioncallfromid" class="table-of-contents__link toc-highlight">loadFunctionCallFromID()</a></li><li><a href="#loadfunctionfromid" class="table-of-contents__link toc-highlight">loadFunctionFromID()</a></li><li><a href="#loadgeneratedcodefromid" class="table-of-contents__link toc-highlight">loadGeneratedCodeFromID()</a></li><li><a href="#loadgeneratorfromid" class="table-of-contents__link toc-highlight">loadGeneratorFromID()</a></li><li><a href="#loadgeneratorgroupfromid" class="table-of-contents__link toc-highlight">loadGeneratorGroupFromID()</a></li><li><a href="#loadgitreffromid" class="table-of-contents__link toc-highlight">loadGitRefFromID()</a></li><li><a href="#loadgitrepositoryfromid" class="table-of-contents__link toc-highlight">loadGitRepositoryFromID()</a></li><li><a href="#loadhealthcheckconfigfromid" class="table-of-contents__link toc-highlight">loadHealthcheckConfigFromID()</a></li><li><a href="#loadhostfromid" class="table-of-contents__link toc-highlight">loadHostFromID()</a></li><li><a href="#loadinputtypedeffromid" class="table-of-contents__link toc-highlight">loadInputTypeDefFromID()</a></li><li><a href="#loadinterfacetypedeffromid" class="table-of-contents__link toc-highlight">loadInterfaceTypeDefFromID()</a></li><li><a href="#loadjsonvaluefromid" class="table-of-contents__link toc-highlight">loadJSONValueFromID()</a></li><li><a href="#loadlabelfromid" class="table-of-contents__link toc-highlight">loadLabelFromID()</a></li><li><a href="#loadlisttypedeffromid" class="table-of-contents__link toc-highlight">loadListTypeDefFromID()</a></li><li><a href="#loadllmfromid" class="table-of-contents__link toc-highlight">loadLLMFromID()</a></li><li><a href="#loadllmtokenusagefromid" class="table-of-contents__link toc-highlight">loadLLMTokenUsageFromID()</a></li><li><a href="#loadmoduleconfigclientfromid" class="table-of-contents__link toc-highlight">loadModuleConfigClientFromID()</a></li><li><a href="#loadmodulefromid" class="table-of-contents__link toc-highlight">loadModuleFromID()</a></li><li><a href="#loadmodulesourcefromid" class="table-of-contents__link toc-highlight">loadModuleSourceFromID()</a></li><li><a href="#loadobjecttypedeffromid" class="table-of-contents__link toc-highlight">loadObjectTypeDefFromID()</a></li><li><a href="#loadportfromid" class="table-of-contents__link toc-highlight">loadPortFromID()</a></li><li><a href="#loadscalartypedeffromid" class="table-of-contents__link toc-highlight">loadScalarTypeDefFromID()</a></li><li><a href="#loadsdkconfigfromid" class="table-of-contents__link toc-highlight">loadSDKConfigFromID()</a></li><li><a href="#loadsearchresultfromid" class="table-of-contents__link toc-highlight">loadSearchResultFromID()</a></li><li><a href="#loadsearchsubmatchfromid" class="table-of-contents__link toc-highlight">loadSearchSubmatchFromID()</a></li><li><a href="#loadsecretfromid" class="table-of-contents__link toc-highlight">loadSecretFromID()</a></li><li><a href="#loadservicefromid" class="table-of-contents__link toc-highlight">loadServiceFromID()</a></li><li><a href="#loadsocketfromid" class="table-of-contents__link toc-highlight">loadSocketFromID()</a></li><li><a href="#loadsourcemapfromid" class="table-of-contents__link toc-highlight">loadSourceMapFromID()</a></li><li><a href="#loadstatfromid" class="table-of-contents__link toc-highlight">loadStatFromID()</a></li><li><a href="#loadterminalfromid" class="table-of-contents__link toc-highlight">loadTerminalFromID()</a></li><li><a href="#loadtypedeffromid" class="table-of-contents__link toc-highlight">loadTypeDefFromID()</a></li><li><a href="#loadworkspacefromid" class="table-of-contents__link toc-highlight">loadWorkspaceFromID()</a></li><li><a href="#module_" class="table-of-contents__link toc-highlight">module_()</a></li><li><a href="#modulesource" class="table-of-contents__link toc-highlight">moduleSource()</a></li><li><a href="#secret" class="table-of-contents__link toc-highlight">secret()</a></li><li><a href="#setsecret" class="table-of-contents__link toc-highlight">setSecret()</a></li><li><a href="#sourcemap" class="table-of-contents__link toc-highlight">sourceMap()</a></li><li><a href="#typedef" class="table-of-contents__link toc-highlight">typeDef()</a></li><li><a href="#version" class="table-of-contents__link toc-highlight">version()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <hr>
+        <div class="flex justify-between">
+          <small>© Dagger 2022-2025</small>
+          <div class="flex gap-8">
+              <a target="_blank" class="footer-discord-link" href="https://discord.gg/dagger-io">
+              </a>
+              <a target="_blank" class="footer-x-link" href="https://twitter.com/dagger_io">
+              </a>
+          </div>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "logo.alt": {
+    "message": "Dagger Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Try Dagger Cloud": {
+    "message": "Try Dagger Cloud",
+    "description": "Navbar item with label Try Dagger Cloud"
+  }
+}

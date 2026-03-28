@@ -1,0 +1,6 @@
+{
+  "copyright": {
+    "message": "\n        <hr />\n        <div class=\"flex justify-between\">\n          <small>© Dagger 2022-2025</small>\n          <div class=\"flex gap-8\">\n              <a target=\"_blank\" class=\"footer-discord-link\" href=\"https://discord.gg/dagger-io\">\n              </a>\n              <a target=\"_blank\" class=\"footer-x-link\" href=\"https://twitter.com/dagger_io\">\n              </a>\n          </div>\n        </div>\n      ",
+    "description": "The footer copyright"
+  }
+}
